@@ -5,23 +5,16 @@
 <meta charset="UTF-8">
 <meta name="author" content="Alexander Broom">
 <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+<script src="components/jquery-2.1.1.min.js"></script>
+<script> 
+$(function() {	
+	$("#header").load("components/header.html");
+});
+</script>
 </head>
 
 <body>
-
-<header>
-<div id="logo-title">
-<img src="images/logo.jpg">
-<h1>Mouse and Trigger</h1>
-</div>
-<ul id="navbar">
-	<li>Home</li>
-	<li>Games</li>
-	<li>Movies</li>
-	<li>About</li>
-	<li>Donate</li>
-</ul>
-</header>
+<div id="header"></div>
 
 <div id="wrap">
 </div>
