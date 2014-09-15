@@ -1,0 +1,43 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+	margin:50px 0px; padding:0px;
+	text-align:center;
+	background-color:#eee;
+}
+
+.article_title {
+	font-size:26px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+		
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+}
+
+.article_sub {
+	font-size:18px;
+}
+
+.article_body {
+	font-size:13px;
+}
+	
+.content {
+	width:600px;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	border:1px #333;
+	background-color: white;
+}
