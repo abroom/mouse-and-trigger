@@ -1,11 +1,38 @@
-/***
-	Author: Alexander Broom
-	Date: September 14, 2014
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  margin: 0px 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: #eee; }
 
-	CSS Style Sheet for Mouse and Trigger Reviews
-***/
+.article_title {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 5px; }
 
-html {
-	color: blue;
-}
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc); }
 
+.article_sub {
+  font-size: 18px;
+  padding-left: 5px; }
+
+.article_body {
+  font-size: 13px; }
+
+.content {
+  width: 600px;
+  margin: 0px auto;
+  text-align: left;
+  padding: 25px;
+  border: 1px #333;
+  background-color: white; }
+
+/*# sourceMappingURL=default.css.map */
