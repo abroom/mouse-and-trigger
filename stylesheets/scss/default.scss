@@ -1,0 +1,43 @@
+// Import variables
+@import "utilities/variables";
+
+// Remove margin and padding from everything
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #eee;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+
+	font: 20px $font-stack;
+	text-align: center;
+	color: $primary-color;
+}
+
+header {
+	margin: 0;
+	background-color:red;
+}
+
+#wrap {
+	margin: 0 auto;
+	background-color: green;
+}
+
+footer {
+	margin: 0;
+	background-color: yellow;
+}
+
+// prevents content from expanding whole viewport if too large
+.content-container {
+	margin: 0 auto;
+	max-width: $content-width;
+	background-color: blue;
+}
