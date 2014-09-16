@@ -7,20 +7,21 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
 <script src="components/jquery-2.1.1.min.js"></script>
 <script> 
-$(function() {	
-	$("#header").load("components/header.html");
+$(document).ready(function() {	
+	$("header").load("components/header.html");
+	$("footer").load("components/footer.html");
 });
 </script>
 </head>
 
 <body>
-<div id="header"></div>
+<header>
+</header>
 
 <div id="wrap">
 </div>
 
 <footer>
 </footer>
-
 </body>
 </html>
