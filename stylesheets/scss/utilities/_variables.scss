@@ -1,10 +1,24 @@
 // Variables for scss
 
+// Font Styling
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$alternate-color: #8e8e8e;
+$highlite-color: #bd6c96;
+
+// Page Styling
+$html-color: $alternate-color;
+$header-color: #FFF;
+$wrap-color: #eee;
+$footer-color: $header-color;
+
+$darken-amount: 10%;
 
 $padding-normal: 20px;
-
 $content-width: 1000px;
+
+// Logo
 $logo-size: 200px;
-$title-width: $content-width - $logo-size - 2 * $padding-normal;
+
+// Navbar
+$navbar-font-size: 23px;
