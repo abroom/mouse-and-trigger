@@ -98,7 +98,13 @@ header {
 // footer
 footer {
 	margin: 0;
-	background-color: $footer-color;
+	padding: $padding-normal;
+	height: $footer-height;
+
+	background: -webkit-linear-gradient($footer-color, $html-color); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($footer-color, $html-color); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($footer-color, $html-color); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($footer-color, $html-color); /* Standard syntax */
 }
 
 // content-container limits width of content if the viewport is too large
