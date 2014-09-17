@@ -2,4 +2,9 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+
+$padding-normal: 20px;
+
 $content-width: 1000px;
+$logo-size: 200px;
+$title-width: $content-width - $logo-size - 2 * $padding-normal;

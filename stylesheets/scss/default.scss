@@ -7,6 +7,7 @@
 	padding: 0;
 }
 
+// html and body
 html {
 	background-color: #eee;
 }
@@ -20,22 +21,47 @@ body {
 	color: $primary-color;
 }
 
+// header
 header {
 	margin: 0;
 	background-color:red;
 }
 
+// Logo and title formatting
+#logo-title {
+	padding: $padding-normal;
+}
+#logo-title:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#logo {
+	float: left;
+	width: $logo-size;
+	height: $logo-size;
+}
+#title {
+	float: left;
+	margin-left: $padding-normal/2;
+}
+
+// wrap
 #wrap {
 	margin: 0 auto;
 	background-color: green;
 }
 
+// footer
 footer {
 	margin: 0;
 	background-color: yellow;
 }
 
-// prevents content from expanding whole viewport if too large
+// content-container limits width of content if the viewport is too large
 .content-container {
 	margin: 0 auto;
 	max-width: $content-width;
