@@ -62,7 +62,7 @@ header {
 #navbar a {
   display: block;
   padding: 20px 40px;
-  color: #333;
+  color: #bd6c96;
   text-decoration: none;
   font-size: 23px; }
 
@@ -82,6 +82,7 @@ header {
 
 #wrap {
   margin: 0 auto;
+  padding: 20px 0;
   background-color: #eee; }
 
 footer {
