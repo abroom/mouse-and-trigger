@@ -1,6 +1,6 @@
 // Loads an Article when div is clicked
 $(document).ready(function() {
-	var date = getQueryVariable("date").split("/");
+	var date = getQueryVariable("date");
 	var articleName = getQueryVariable("article");
 
 	loadArticle(getFileLocation(date, articleName));
@@ -17,12 +17,12 @@ function getQueryVariable(variable) {
 	return(false);
 }
 
-// Creates file location string
-function getFileLocation(date, articleName) {
-	return "articles/"+date[2]+"/"+date[1]+"/"+date[0]+"/"+articleName+".html";
-}
-
 // Loads article file into proper divs
 function loadArticle(articleFileLocation) {
 	$("#wrap").load(articleFileLocation);
+}
+
+// Creates file location string
+function getFileLocation(date, articleName) {
+	return "articles/"+date+"/"+articleName+".html";
 }

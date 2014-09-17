@@ -131,9 +131,30 @@ footer {
 	color: $highlight-color;
 }
 
+.sub {
+	margin: 0 $padding-normal;
+	font-weight: normal;
+	font-style: italic;
+}
+.sub a {
+	text-decoration: none;
+	color: $highlight-color;
+}
+.sub a:hover {
+	text-decoration: underline;
+}
+
 .blurb {
 	margin: 0 2*$padding-normal;
 	padding: 0.5*$padding-normal 0;
+}
+.blurb a {
+	font-weight: bold;
+	color: $highlight-color;
+	text-decoration: none;
+}
+.blurb a:hover {
+	text-decoration: underline;
 }
 
 .continue-reading {

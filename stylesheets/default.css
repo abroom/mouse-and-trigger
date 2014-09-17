@@ -114,9 +114,29 @@ footer {
 .title a:hover {
   color: #bd6c96; }
 
+.sub {
+  margin: 0 20px;
+  font-weight: normal;
+  font-style: italic; }
+
+.sub a {
+  text-decoration: none;
+  color: #bd6c96; }
+
+.sub a:hover {
+  text-decoration: underline; }
+
 .blurb {
   margin: 0 40px;
   padding: 10px 0; }
+
+.blurb a {
+  font-weight: bold;
+  color: #bd6c96;
+  text-decoration: none; }
+
+.blurb a:hover {
+  text-decoration: underline; }
 
 .continue-reading {
   margin: 0 40px;
