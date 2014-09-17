@@ -7,8 +7,9 @@
 	padding: 0;
 }
 
+// html and body
 html {
-	background-color: #eee;
+	background-color: $html-color;
 }
 
 body {
@@ -20,24 +21,88 @@ body {
 	color: $primary-color;
 }
 
+// header
 header {
-	margin: 0;
-	background-color:red;
+	background-color: $header-color;
 }
 
+// Logo and title formatting
+#logo-title {
+	padding: $padding-normal;
+}
+#logo-title:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#logo {
+	float: left;
+	width: $logo-size;
+	height: $logo-size;
+}
+#title {
+	float: left;
+	margin-left: $padding-normal/2;
+}
+
+// Navbar
+#navbar {
+	list-style-type: none;
+	padding: 0 $padding-normal;
+
+	background: -webkit-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* Standard syntax */
+
+	border-radius: $padding-normal $padding-normal 0 0;
+}
+#navbar:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#navbar li {
+	float: left;
+}
+#navbar a {
+	display: block;
+	padding: $padding-normal 2*$padding-normal;
+	color: $primary-color;
+	text-decoration: none;
+	font-size: $navbar-font-size;
+}
+#navbar a:hover {
+	background: -webkit-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* Standard syntax */
+}
+#navbar a:active {
+	background: none;
+	background-color: darken($wrap-color, 1.5*$darken-amount);
+}
+
+// wrap
 #wrap {
 	margin: 0 auto;
-	background-color: green;
+	background-color: $wrap-color;
 }
 
+// footer
 footer {
 	margin: 0;
-	background-color: yellow;
+	background-color: $footer-color;
 }
 
-// prevents content from expanding whole viewport if too large
+// content-container limits width of content if the viewport is too large
 .content-container {
 	margin: 0 auto;
 	max-width: $content-width;
-	background-color: blue;
 }

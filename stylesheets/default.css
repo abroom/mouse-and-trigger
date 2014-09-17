@@ -3,7 +3,7 @@
   padding: 0; }
 
 html {
-  background-color: #eee; }
+  background-color: #8e8e8e; }
 
 body {
   margin: 0 auto;
@@ -13,20 +13,83 @@ body {
   color: #333; }
 
 header {
-  margin: 0;
-  background-color: red; }
+  background-color: #FFF; }
+
+#logo-title {
+  padding: 20px; }
+
+#logo-title:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#logo {
+  float: left;
+  width: 200px;
+  height: 200px; }
+
+#title {
+  float: left;
+  margin-left: 10px; }
+
+#navbar {
+  list-style-type: none;
+  padding: 0 20px;
+  background: -webkit-linear-gradient(#eee, #d4d4d4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eee, #d4d4d4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eee, #d4d4d4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eee, #d4d4d4);
+  /* Standard syntax */
+  border-radius: 20px 20px 0 0; }
+
+#navbar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#navbar li {
+  float: left; }
+
+#navbar a {
+  display: block;
+  padding: 20px 40px;
+  color: #333;
+  text-decoration: none;
+  font-size: 23px; }
+
+#navbar a:hover {
+  background: -webkit-linear-gradient(#e1e1e1, #c8c8c8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e1e1e1, #c8c8c8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e1e1e1, #c8c8c8);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e1e1e1, #c8c8c8);
+  /* Standard syntax */ }
+
+#navbar a:active {
+  background: none;
+  background-color: #c8c8c8; }
 
 #wrap {
   margin: 0 auto;
-  background-color: green; }
+  background-color: #eee; }
 
 footer {
   margin: 0;
-  background-color: yellow; }
+  background-color: #FFF; }
 
 .content-container {
   margin: 0 auto;
-  max-width: 1000px;
-  background-color: blue; }
+  max-width: 1000px; }
 
 /*# sourceMappingURL=default.css.map */
