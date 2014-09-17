@@ -113,3 +113,34 @@ footer {
 	margin: 0 auto;
 	max-width: $content-width;
 }
+
+// article styling
+.article {
+	margin: 0 3*$padding-normal;
+	padding: $padding-normal 0;
+	text-align: left;
+}
+
+.title {
+}
+.title a {
+	text-decoration: none;
+	color: $primary-color;
+}
+.title a:hover {
+	color: $highlight-color;
+}
+
+.blurb {
+	margin: 0 2*$padding-normal;
+	padding: 0.5*$padding-normal 0;
+}
+
+.continue-reading {
+	margin: 0 2*$padding-normal;
+	text-decoration: none;
+	color: $highlight-color;
+}
+.continue-reading:hover {
+	text-decoration: underline;
+}

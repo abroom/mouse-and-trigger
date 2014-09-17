@@ -102,4 +102,28 @@ footer {
   margin: 0 auto;
   max-width: 1000px; }
 
+.article {
+  margin: 0 60px;
+  padding: 20px 0;
+  text-align: left; }
+
+.title a {
+  text-decoration: none;
+  color: #333; }
+
+.title a:hover {
+  color: #bd6c96; }
+
+.blurb {
+  margin: 0 40px;
+  padding: 10px 0; }
+
+.continue-reading {
+  margin: 0 40px;
+  text-decoration: none;
+  color: #bd6c96; }
+
+.continue-reading:hover {
+  text-decoration: underline; }
+
 /*# sourceMappingURL=default.css.map */
