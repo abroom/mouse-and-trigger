@@ -1,26 +1,36 @@
 // Loads articles for display on index
+function loadArticles(category) {
+	loadDirectory(category);
+}
 
-$(document).ready(function() {
-	loadDirectory();
-});
 
-function loadDirectory() {
+function loadDirectory(category) {
 	$.get (
 		"articles/directory.txt",
 		function(directory) {
-			navDirectory(directory)
+			navDirectory(directory, category)
 		},
 		'text'
 	);
 }
 
-function navDirectory(directory) {
+function navDirectory(directory, category) {
 	var dirItems = directory.split("\n");
 	var index = 0;
-	for (var i = 0; i < 10 && i < dirItems.length; i++) {
-		var article = dirItems[index].split(" ");
-		loadAritcle(article[0],article[1]);
-		index++;
+	if (category) {
+		for (var i = 0; i < 10 && i < dirItems.length; i++) {
+			var article = dirItems[index].split(" ");
+			if (category == article[2]) {
+				loadAritcle(article[0],article[1]);
+			}
+			index++;
+		}
+	} else {
+		for (var i = 0; i < 10 && i < dirItems.length; i++) {
+			var article = dirItems[index].split(" ");
+			loadAritcle(article[0],article[1]);
+			index++;
+		}
 	}
 }
 
