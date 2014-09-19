@@ -5,6 +5,9 @@
 #article-title {
   margin: 0 20px; }
 
+#article-banner {
+  margin-bottom: 20px; }
+
 #article-sub {
   margin: 0 40px;
   margin-bottom: 10px;
@@ -35,5 +38,15 @@ a {
 
 a:hover {
   text-decoration: underline; }
+
+.article-image {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 400px;
+  border: 5px solid #8e8e8e;
+  border-radius: 5px;
+  background-color: white; }
 
 /*# sourceMappingURL=article.css.map */
