@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-align: left; }
 
 html {
   background-color: #8e8e8e; }
@@ -61,8 +62,8 @@ header {
 
 #navbar a {
   display: block;
-  padding: 20px 40px;
-  color: #333;
+  padding: 20px;
+  color: #bd6c96;
   text-decoration: none;
   font-size: 23px; }
 
@@ -82,7 +83,11 @@ header {
 
 #wrap {
   margin: 0 auto;
+  padding: 20px 0;
   background-color: #eee; }
+
+#wrap > * {
+  margin: 0 40px; }
 
 footer {
   margin: 0;

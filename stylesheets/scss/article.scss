@@ -1,36 +1,49 @@
 // Import variables
 @import "utilities/variables";
 
-.article_sub {
-	font-size:18px;
-	padding-left:5px;
+#article {
+    margin: 0 $padding-normal;
+    text-align: left;
 }
 
-.article_body {
-	font-size:13px;
+#article-title {
+    margin: 0 $padding-normal;
 }
 
-.article_title {
-	font-size: 26px;
-	font-weight: bold;
-	padding-bottom: 5px;
-}
-	
-.content {
-	width:600px;
-	margin:0px auto;
-	text-align:left;
-	padding:25px;
-	border:1px #333;
-	background-color: white;
+#article-sub {
+    margin: 0 2*$padding-normal;
+    margin-bottom: 0.5*$padding-normal;
+    font-weight: normal;
+    font-style: italic;
 }
 
-hr {
+#article hr {
     border: 0;
     height: 1px;
-    background: #333;
-    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -webkit-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:    -moz-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:     -ms-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:      -o-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+}
+
+#article-body {
+    margin: 0 3*$padding-normal;
+}
+
+#article-blurb {
+    margin-top: 0.75*$padding-normal !important;
+    font-style: italic;
+}
+
+#article p {
+    margin-top: 0.25*$padding-normal;
+}
+
+a {
+    color: $highlight-color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
 }

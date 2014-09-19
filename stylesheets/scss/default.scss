@@ -5,6 +5,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	text-align: left;
 }
 
 // html and body
@@ -73,8 +74,8 @@ header {
 }
 #navbar a {
 	display: block;
-	padding: $padding-normal 2*$padding-normal;
-	color: $primary-color;
+	padding: $padding-normal;
+	color: $highlight-color;
 	text-decoration: none;
 	font-size: $navbar-font-size;
 }
@@ -92,7 +93,11 @@ header {
 // wrap
 #wrap {
 	margin: 0 auto;
+	padding: $padding-normal 0;
 	background-color: $wrap-color;
+}
+#wrap > * {
+	margin: 0 2*$padding-normal;
 }
 
 // footer

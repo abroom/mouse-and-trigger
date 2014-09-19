@@ -1,0 +1,29 @@
+// Import variables
+@import "utilities/variables";
+
+// General styling
+a {
+    color: $highlight-color;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; 
+}
+
+// Specific
+#about {
+    margin: 0 2*$padding-normal;
+    text-align: left;
+}
+
+#contributers {
+    margin: 0 2*$padding-normal;
+    margin-top: $padding-normal;
+}
+#contributers ul {
+    margin: 0 $padding-normal;
+    list-style: none;
+}
+#contributers a {
+    font-size: $navbar-font-size;
+}
