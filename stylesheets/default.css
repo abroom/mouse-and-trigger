@@ -86,6 +86,9 @@ header {
   padding: 20px 0;
   background-color: #eee; }
 
+#wrap > * {
+  margin: 0 40px; }
+
 footer {
   margin: 0;
   padding: 20px;
@@ -102,49 +105,5 @@ footer {
 .content-container {
   margin: 0 auto;
   max-width: 1000px; }
-
-.article {
-  margin: 0 60px;
-  padding: 20px 0;
-  text-align: left; }
-
-.title a {
-  text-decoration: none;
-  color: #333; }
-
-.title a:hover {
-  color: #bd6c96; }
-
-.sub {
-  margin: 0 20px;
-  font-weight: normal;
-  font-style: italic; }
-
-.sub a {
-  text-decoration: none;
-  color: #bd6c96; }
-
-.sub a:hover {
-  text-decoration: underline; }
-
-.blurb {
-  margin: 0 40px;
-  padding: 10px 0; }
-
-.blurb a {
-  font-weight: bold;
-  color: #bd6c96;
-  text-decoration: none; }
-
-.blurb a:hover {
-  text-decoration: underline; }
-
-.continue-reading {
-  margin: 0 40px;
-  text-decoration: none;
-  color: #bd6c96; }
-
-.continue-reading:hover {
-  text-decoration: underline; }
 
 /*# sourceMappingURL=default.css.map */

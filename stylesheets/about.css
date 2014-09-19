@@ -1,0 +1,23 @@
+a {
+  color: #bd6c96;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+#about {
+  margin: 0 40px;
+  text-align: left; }
+
+#contributers {
+  margin: 0 40px;
+  margin-top: 20px; }
+
+#contributers ul {
+  margin: 0 20px;
+  list-style: none; }
+
+#contributers a {
+  font-size: 23px; }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,59 @@
+// load articles styling
+
+// Import variables
+@import "utilities/variables";
+
+// article styling
+.article {
+	text-align: left;
+	padding-bottom: $padding-normal;
+}
+.article:first-child {
+	margin-top: 0.5*$padding-normal !important;
+}
+
+.title {
+	margin: 0 $padding-normal;
+}
+.title a {
+	text-decoration: none;
+	color: $primary-color;
+}
+.title a:hover {
+	color: $highlight-color;
+}
+
+.sub {
+	margin: 0 2*$padding-normal;
+	font-weight: normal;
+	font-style: italic;
+}
+.sub a {
+	text-decoration: none;
+	color: $highlight-color;
+}
+.sub a:hover {
+	text-decoration: underline;
+}
+
+.blurb {
+	margin: 0 3*$padding-normal;
+	padding: 0.5*$padding-normal 0;
+}
+.blurb a {
+	font-weight: bold;
+	color: $highlight-color;
+	text-decoration: none;
+}
+.blurb a:hover {
+	text-decoration: underline;
+}
+
+.continue-reading {
+	margin: 0 2*$padding-normal;
+	text-decoration: none;
+	color: $highlight-color;
+}
+.continue-reading:hover {
+	text-decoration: underline;
+}
