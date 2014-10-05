@@ -16,26 +16,41 @@ function loadDirectory(category) {
 
 function navDirectory(directory, category) {
 	var dirItems = directory.split("\n");
-	var index = 0;
+	var articlesPerPage = 10;
+	var index = getIndex();
 
 	if (category) {
 		var i = 0;
-		while(i < 10 && i < dirItems.length) {
+		while(i < articlesPerPage) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
 				loadArticle(article[0],article[1]);
 				i++;
 			}
 			index++;
-
 		}
 	} else {
-		for (var i = 0; i < 10 && i < dirItems.length; i++) {
+		for (var i = 0; i < articlesPerPage; i++) {
 			var article = dirItems[index].split(" ");
 			loadArticle(article[0],article[1]);
 			index++;
 		}
 	}
+
+	if (!category) {
+		category = "index";
+	}
+
+	var navButtons = '<ul>';
+	if (index < dirItems.length) {
+		navButtons += '<li><a href="'+category+'.html?index='+index+'">Older Articles</a></li>';
+	}
+	if (index > articlesPerPage) {
+		navButtons += '<li><a href="'+category+'.html?index='+(index-2*articlesPerPage)+'">Newer Articles</a></li>'
+	}
+	navButtons += '</ul>';
+
+	$("#navButtons").append(navButtons);
 }
 
 function loadArticle(date, fileName) {
@@ -68,7 +83,23 @@ function writeArticle(article, date, fileName) {
 			   + '<p class="blurb">'+blurb+'</p>'
 			   + '<a class="continue-reading" '+link+'>Continue Reading ...</a>'
 			   + '</div>';
-	$("#wrap").append(output);
+	$("#articles").append(output);
+}
+
+// returns page number
+function getIndex() {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	var index = 0;
+
+	for (var i=0; i<vars.length; i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == "index") {
+			index = pair[1];
+		}
+	}
+
+	return parseInt(index);
 }
 
 
