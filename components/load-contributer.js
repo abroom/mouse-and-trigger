@@ -16,5 +16,5 @@ function loadContributer(contributerFileLocation) {
 
 // Creates file location string
 function getFileLocation(contributerName) {
-	return "contributers/"+contributerName+".html";
+	return "contributers/"+contributerName+"/"+contributerName+".html";
 }

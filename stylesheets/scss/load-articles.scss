@@ -36,6 +36,16 @@
 	text-decoration: underline;
 }
 
+.banner {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 80%;
+    border: 5px solid $alternate-color;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .blurb {
 	margin: 0 3*$padding-normal;
 	padding: 0.5*$padding-normal 0;

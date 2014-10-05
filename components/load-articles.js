@@ -48,11 +48,19 @@ function writeAritcle(article, date, fileName) {
 	var link = 'href="article.html?date='+date+'&amp;article='+fileName+'"';
 	var title = $(article).find('#article-title').html();
 	var sub = $(article).find('#article-sub').html();
+	var bannerSrc = $(article).find('#article-banner').attr('src');
+	if (typeof bannerSrc == 'undefined') {
+		bannerSrc = "components/images/banner.png";
+		bannerAlt = "Mouse And Trigger default banner"
+	} else {
+		var bannerAlt = $(article).find('#article-banner').attr('alt');
+	}
 	var blurb = $(article).find('#article-blurb').html();
 
 	var output = '<div class="article">'
 			   + '<h2 class="title"><a '+link+'>'+title+'</a></h2>'
 			   + '<h4 class="sub">'+sub+'</h4>'
+			   + '<img class="banner" src="'+bannerSrc+'" alt="'+bannerAlt+'">'
 			   + '<p class="blurb">'+blurb+'</p>'
 			   + '<a class="continue-reading" '+link+'>Continue Reading ...</a>'
 			   + '</div>';
