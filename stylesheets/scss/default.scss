@@ -69,7 +69,7 @@ header {
 	line-height: 0;
 	height: 0;
 }
-#navbar li {
+#navbar > li {
 	float: left;
 }
 #navbar a {
@@ -79,15 +79,37 @@ header {
 	text-decoration: none;
 	font-size: $navbar-font-size;
 }
-#navbar a:hover {
+#navbar > li:hover {
 	background: -webkit-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(darken($wrap-color, 0.5*$darken-amount), darken($wrap-color, 1.5*$darken-amount)); /* Standard syntax */
 }
-#navbar a:active {
+#navbar > li > a:active {
 	background: none;
 	background-color: darken($wrap-color, 1.5*$darken-amount);
+}
+
+// drop down menu styling
+.drop-down {
+	display: none;
+}
+#navbar li:hover > .drop-down {
+	display: block;
+}
+.drop-down {
+	position: absolute;
+	float: none;
+	list-style-type: none;
+
+	background-color: lighten($highlight-color, $darken-amount);
+}
+.drop-down a {
+	color: lighten($primary-color, 1.5*$darken-amount) !important;
+	// color: darken($wrap-color, $darken-amount) !important;
+}
+.drop-down a:hover {
+	background-color: $highlight-color;
 }
 
 // wrap
