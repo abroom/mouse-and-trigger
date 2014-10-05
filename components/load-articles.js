@@ -17,34 +17,38 @@ function loadDirectory(category) {
 function navDirectory(directory, category) {
 	var dirItems = directory.split("\n");
 	var index = 0;
+
 	if (category) {
-		for (var i = 0; i < 10 && i < dirItems.length; i++) {
+		var i = 0;
+		while(i < 10 && i < dirItems.length) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
-				loadAritcle(article[0],article[1]);
+				loadArticle(article[0],article[1]);
+				i++;
 			}
 			index++;
+
 		}
 	} else {
 		for (var i = 0; i < 10 && i < dirItems.length; i++) {
 			var article = dirItems[index].split(" ");
-			loadAritcle(article[0],article[1]);
+			loadArticle(article[0],article[1]);
 			index++;
 		}
 	}
 }
 
-function loadAritcle(date, fileName) {
+function loadArticle(date, fileName) {
 	$.get (
 		'articles/'+date+'/'+fileName+'.html',
 		function(article) {
-			writeAritcle(article, date, fileName);
+			writeArticle(article, date, fileName);
 		},
 		'html'
 	);
 }
 
-function writeAritcle(article, date, fileName) {
+function writeArticle(article, date, fileName) {
 	var link = 'href="article.html?date='+date+'&amp;article='+fileName+'"';
 	var title = $(article).find('#article-title').html();
 	var sub = $(article).find('#article-sub').html();
