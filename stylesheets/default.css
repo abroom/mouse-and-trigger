@@ -57,7 +57,7 @@ header {
   line-height: 0;
   height: 0; }
 
-#navbar li {
+#navbar > li {
   float: left; }
 
 #navbar a {
@@ -67,7 +67,7 @@ header {
   text-decoration: none;
   font-size: 23px; }
 
-#navbar a:hover {
+#navbar > li:hover {
   background: -webkit-linear-gradient(#e1e1e1, #c8c8c8);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#e1e1e1, #c8c8c8);
@@ -77,9 +77,27 @@ header {
   background: linear-gradient(#e1e1e1, #c8c8c8);
   /* Standard syntax */ }
 
-#navbar a:active {
+#navbar > li > a:active {
   background: none;
   background-color: #c8c8c8; }
+
+.drop-down {
+  display: none; }
+
+#navbar li:hover > .drop-down {
+  display: block; }
+
+.drop-down {
+  position: absolute;
+  float: none;
+  list-style-type: none;
+  background-color: #cd8faf; }
+
+.drop-down a {
+  color: #595959 !important; }
+
+.drop-down a:hover {
+  background-color: #bd6c96; }
 
 #wrap {
   margin: 0 auto;
