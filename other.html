@@ -6,9 +6,15 @@
 <meta name="author" content="Alexander Broom and Austin Thompson">
 <title>MAT Other</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/load-articles.css">
 <script src="components/jquery-2.1.1.min.js"></script>
 <script src="components/load-header-footer.js"></script>
+<script src="components/load-articles.js"></script>
+<script>
+$(document).ready(function() {
+	loadArticles("other");
+});
+</script>
 </head>
 
 <body>
@@ -17,17 +23,8 @@
 </header>
 
 <div id="wrap" class="content-container">
-
-<div id="other">
-<ul>
-<li><a href="videoGames.html">Video Games</a></li>
-<li><a href="boardGames.html">Board Games</a></li>
-<li><a href="movies.html">Movies</a></li>
-<li><a href="television.html">Television</a></li>
-<li><a href="books.html">Books</a></li>
-</ul>
-</div>
-
+	<div id="articles"></div>
+	<div id="navButtons"></div>
 </div>
 
 <footer>
