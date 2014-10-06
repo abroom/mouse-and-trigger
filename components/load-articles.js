@@ -21,7 +21,7 @@ function navDirectory(directory, category) {
 
 	if (category) {
 		var i = 0;
-		while(i < articlesPerPage) {
+		while(i < articlesPerPage && index < dirItems.length) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
 				loadArticle(article[0],article[1]);
@@ -30,7 +30,7 @@ function navDirectory(directory, category) {
 			index++;
 		}
 	} else {
-		for (var i = 0; i < articlesPerPage; i++) {
+		for (var i = 0; i < articlesPerPage && index < dirItems.length; i++) {
 			var article = dirItems[index].split(" ");
 			loadArticle(article[0],article[1]);
 			index++;
