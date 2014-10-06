@@ -43,10 +43,10 @@ function navDirectory(directory, category) {
 
 	var navButtons = '<ul>';
 	if (index < dirItems.length) {
-		navButtons += '<li><a href="'+category+'.html?index='+index+'">Older Articles</a></li>';
+		navButtons += '<li><a class="button" href="'+category+'.html?index='+index+'">Older Articles</a></li>';
 	}
 	if (index > articlesPerPage) {
-		navButtons += '<li><a href="'+category+'.html?index='+(index-2*articlesPerPage)+'">Newer Articles</a></li>'
+		navButtons += '<li><a class="button" href="'+category+'.html?index='+(index-2*articlesPerPage)+'">Newer Articles</a></li>'
 	}
 	navButtons += '</ul>';
 

@@ -13,6 +13,9 @@ body {
   text-align: center;
   color: #333; }
 
+.button {
+  background-color: #bd6c96; }
+
 header {
   background-color: #FFF; }
 
@@ -106,6 +109,18 @@ header {
 
 #wrap > * {
   margin: 0 40px; }
+
+#navButtons {
+  text-align: center;
+  margin: 20px; }
+
+#navButtons ul {
+  display: inline-block; }
+
+#navButtons li {
+  list-style-type: none;
+  display: inline;
+  margin: 20px; }
 
 footer {
   margin: 0;

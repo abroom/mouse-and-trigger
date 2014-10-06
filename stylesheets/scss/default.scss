@@ -22,6 +22,10 @@ body {
 	color: $primary-color;
 }
 
+.button {
+	background-color: $highlight-color;
+}
+
 // header
 header {
 	background-color: $header-color;
@@ -120,6 +124,20 @@ header {
 }
 #wrap > * {
 	margin: 0 2*$padding-normal;
+}
+
+// navButtons
+#navButtons {
+	text-align: center;
+	margin: $padding-normal;
+}
+#navButtons ul {
+	display: inline-block;
+}
+#navButtons li {
+	list-style-type: none;
+	display: inline;
+	margin: $padding-normal;
 }
 
 // footer
