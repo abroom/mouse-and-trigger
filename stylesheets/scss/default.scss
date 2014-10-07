@@ -23,7 +23,25 @@ body {
 }
 
 .button {
-	background-color: $highlight-color;
+	border-radius: 0.5*$padding-normal;
+	padding: 0.5*$padding-normal;
+
+	text-decoration: none;
+	color: lighten($primary-color, 0.5*$darken-amount);
+
+	background: -webkit-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* Standard syntax */
+}
+.button:hover {
+	background: -webkit-linear-gradient($highlight-color, darken($highlight-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($highlight-color, darken($highlight-color, $darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($highlight-color, darken($highlight-color, $darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($highlight-color, darken($highlight-color, $darken-amount)); /* Standard syntax */
+}
+.button:active {
+	background: darken($highlight-color, $darken-amount);
 }
 
 // header

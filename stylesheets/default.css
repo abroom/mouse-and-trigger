@@ -14,7 +14,31 @@ body {
   color: #333; }
 
 .button {
-  background-color: #bd6c96; }
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #404040;
+  background: -webkit-linear-gradient(#cd8faf, #bd6c96);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cd8faf, #bd6c96);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cd8faf, #bd6c96);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cd8faf, #bd6c96);
+  /* Standard syntax */ }
+
+.button:hover {
+  background: -webkit-linear-gradient(#bd6c96, #aa4c7d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#bd6c96, #aa4c7d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#bd6c96, #aa4c7d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#bd6c96, #aa4c7d);
+  /* Standard syntax */ }
+
+.button:active {
+  background: #aa4c7d; }
 
 header {
   background-color: #FFF; }
