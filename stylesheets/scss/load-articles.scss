@@ -6,10 +6,10 @@
 // article styling
 .article {
 	text-align: left;
-	padding-bottom: $padding-normal;
+	padding-bottom: 2*$padding-normal;
 }
 .article:first-child {
-	margin-top: 0.5*$padding-normal !important;
+	margin-top: $padding-normal !important;
 }
 
 .title {
@@ -25,6 +25,7 @@
 
 .sub {
 	margin: 0 2*$padding-normal;
+	margin-bottom: 0.25*$padding-normal;
 	font-weight: normal;
 	font-style: italic;
 }
