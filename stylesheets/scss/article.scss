@@ -6,6 +6,17 @@
     text-align: left;
 }
 
+#article-author-portrait {
+    float: right;
+}
+#article-author-portrait img {
+    width: $portrait-size-thumb;
+    height: $portrait-size-thumb;
+    border-radius: $portrait-size-thumb/2;
+
+    box-shadow: 0 0 2*$img-border-size $highlight-color;
+}
+
 #article-title {
     margin: 0 $padding-normal;
 }

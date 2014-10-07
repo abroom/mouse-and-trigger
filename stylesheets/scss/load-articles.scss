@@ -12,6 +12,23 @@
 	margin-top: $padding-normal !important;
 }
 
+.author-portrait {
+	float: right;
+	position: relative;
+
+	margin-left: -$portrait-size-thumb - 2*$img-border-size;
+	
+	top:0;
+	z-index: 1;
+
+	width: $portrait-size-thumb;
+	height: $portrait-size-thumb;
+
+	border-radius: $portrait-size-thumb/2;
+
+	box-shadow: 0 0 10*$img-border-size $alternate-color;
+}
+
 .title {
 	margin: 0 $padding-normal;
 }
@@ -42,8 +59,8 @@
     overflow: hidden;
     margin: 0 auto;
     max-width: 80%;
-    border: 5px solid $alternate-color;
-    border-radius: 5px;
+    border: $img-border-size solid $alternate-color;
+    border-radius: $img-border-size;
     background-color: white;
 }
 

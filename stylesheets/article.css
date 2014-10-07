@@ -2,6 +2,15 @@
   margin: 0 20px;
   text-align: left; }
 
+#article-author-portrait {
+  float: right; }
+
+#article-author-portrait img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  box-shadow: 0 0 10px #bd6c96; }
+
 #article-title {
   margin: 0 20px; }
 
