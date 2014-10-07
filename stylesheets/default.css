@@ -126,7 +126,11 @@ header {
   position: absolute;
   float: none;
   list-style-type: none;
-  background-color: #cd8faf; }
+  background-color: #cd8faf;
+  border-bottom-right-radius: 20px; }
+
+.drop-down li:last-child a {
+  border-bottom-right-radius: 20px; }
 
 .drop-down a {
   color: #333 !important;

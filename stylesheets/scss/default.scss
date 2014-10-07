@@ -135,6 +135,10 @@ header {
 	list-style-type: none;
 
 	background-color: lighten($highlight-color, $darken-amount);
+	border-bottom-right-radius: $padding-normal;
+}
+.drop-down li:last-child a {
+	border-bottom-right-radius: $padding-normal;
 }
 .drop-down a {
 	color: $primary-color !important;
