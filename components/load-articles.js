@@ -1,6 +1,7 @@
 // Loads articles for display on index
 
 var articlesPerPage = 10;
+var lastDefaultIndex = 7;
 
 function loadArticles(category) {
 	loadDirectory(category);
@@ -62,6 +63,7 @@ function navDirectoryAscending(directory, category) {
 		}
 	}
 
+
 	if (!category) {
 		category = "index";
 	}
@@ -71,7 +73,7 @@ function navDirectoryAscending(directory, category) {
 		navButtons += '<li><a class="button" href="'+category+'.html'
 				   +'?index='+index+'">Older Articles</a></li>';
 	}
-	if (index > articlesPerPage) {
+	if (startingIndex > 0) {
 		navButtons += '<li><a class="button" href="'+category+'.html'
 				   +'?index='+(startingIndex-1)
 				   +'&amp;order=descending">Newer Articles</a></li>';
@@ -132,11 +134,11 @@ function navDirectoryDescending(directory, category) {
 	}
 
 	var navButtons = '<ul>';
-	if (index < dirItems.length) {
+	if (startingIndex < dirItems.length) {
 		navButtons += '<li><a class="button" href="'+category+'.html'
 				   +'?index='+(startingIndex+1)+'">Older Articles</a></li>';
 	}
-	if (index > articlesPerPage) {
+	if (index > lastDefaultIndex) {
 		navButtons += '<li><a class="button" href="'+category+'.html'
 				   +'?index='+index
 				   +'&amp;order=descending">Newer Articles</a></li>';
@@ -195,7 +197,6 @@ function getIndex() {
 			index = pair[1];
 		}
 	}
-
 	return parseInt(index);
 }
 
