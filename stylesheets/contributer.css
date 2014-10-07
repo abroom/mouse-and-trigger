@@ -1,0 +1,26 @@
+#name-title h2 {
+  margin: 0 20px;
+  color: #bd6c96; }
+
+#portrait {
+  float: right;
+  margin: 20px 2px 17px 40px; }
+
+#portrait img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px; }
+
+#about {
+  margin: 20px; }
+
+#about p {
+  margin: 20px 60px; }
+
+#links {
+  margin-top: 40px; }
+
+#links a {
+  margin: 10px; }
+
+/*# sourceMappingURL=contributer.css.map */

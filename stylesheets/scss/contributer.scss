@@ -1,0 +1,31 @@
+// Import Variables
+@import "utilities/variables";
+
+#name-title h2 {
+	margin: 0 $padding-normal;
+	color: $highlight-color;
+}
+
+#portrait {
+	float: right;
+	margin: 20px 2px 17px 40px;
+}
+#portrait img {
+	width: $portrait-size;
+	height: $portrait-size;
+	border-radius: $padding-normal;
+}
+
+#about {
+	margin: $padding-normal;
+}
+#about p {
+	margin: $padding-normal 3*$padding-normal;
+}
+
+#links {
+	margin-top: 2*$padding-normal;
+}
+#links a {
+	margin: 0.5*$padding-normal;
+}
