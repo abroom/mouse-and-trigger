@@ -78,7 +78,6 @@ header {
 // Navbar
 #navbar {
 	list-style-type: none;
-	// padding: 0 $padding-normal;
 
 	background: -webkit-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Opera 11.1 to 12.0 */
@@ -129,10 +128,20 @@ header {
 }
 
 // drop down menu styling
+.menu {
+	cursor: pointer;
+}
+.active {
+	background: darken($wrap-color, 1.5*$darken-amount);
+}
+.active:hover {
+	background: darken($wrap-color, 1.5*$darken-amount) !important;
+}
+
 .drop-down {
 	display: none;
 }
-#navbar li:hover > .drop-down {
+#navbar li:hover > .drop-down, .active > .drop-down {
 	display: block;
 }
 .drop-down {

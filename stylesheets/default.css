@@ -122,10 +122,19 @@ header {
 #navbar > li:last-child > a:active {
   border-top-right-radius: 20px; }
 
+.menu {
+  cursor: pointer; }
+
+.active {
+  background: #c8c8c8; }
+
+.active:hover {
+  background: #c8c8c8 !important; }
+
 .drop-down {
   display: none; }
 
-#navbar li:hover > .drop-down {
+#navbar li:hover > .drop-down, .active > .drop-down {
   display: block; }
 
 .drop-down {
