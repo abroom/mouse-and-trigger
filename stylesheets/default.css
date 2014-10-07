@@ -68,7 +68,6 @@ header {
 
 #navbar {
   list-style-type: none;
-  padding: 0 20px;
   background: -webkit-linear-gradient(#eee, #d4d4d4);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#eee, #d4d4d4);
@@ -89,6 +88,12 @@ header {
 
 #navbar > li {
   float: left; }
+
+#navbar > li:first-child {
+  border-top-left-radius: 20px; }
+
+#navbar > li:last-child {
+  border-top-right-radius: 20px; }
 
 #navbar a {
   display: block;
@@ -124,7 +129,8 @@ header {
   background-color: #cd8faf; }
 
 .drop-down a {
-  color: #595959 !important; }
+  color: #333 !important;
+  padding: 10px 20px !important; }
 
 .drop-down a:hover {
   background-color: #bd6c96; }

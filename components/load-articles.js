@@ -36,24 +36,13 @@ function navDirectoryAscending(directory, category) {
 
 	if (category) {
 		var i = 0;
-		if (category == "other") {
-			while(i < articlesPerPage && index < dirItems.length) {
-				var article = dirItems[index].split(" ");
-				if ("videoGames" != article[2]) {
-					loadArticleAscending(article[0],article[1]);
-					i++;
-				}
-				index++;
+		while(i < articlesPerPage && index < dirItems.length) {
+			var article = dirItems[index].split(" ");
+			if (category == article[2]) {
+				loadArticleAscending(article[0],article[1]);
+				i++;
 			}
-		} else {
-			while(i < articlesPerPage && index < dirItems.length) {
-				var article = dirItems[index].split(" ");
-				if (category == article[2]) {
-					loadArticleAscending(article[0],article[1]);
-					i++;
-				}
-				index++;
-			}
+			index++;
 		}
 	} else {
 		for (var i = 0; i < articlesPerPage && index < dirItems.length; i++) {

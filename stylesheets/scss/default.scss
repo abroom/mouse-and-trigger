@@ -78,7 +78,7 @@ header {
 // Navbar
 #navbar {
 	list-style-type: none;
-	padding: 0 $padding-normal;
+	// padding: 0 $padding-normal;
 
 	background: -webkit-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient($wrap-color, darken($wrap-color, $darken-amount)); /* For Opera 11.1 to 12.0 */
@@ -97,6 +97,12 @@ header {
 }
 #navbar > li {
 	float: left;
+}
+#navbar > li:first-child {
+	border-top-left-radius: $padding-normal;
+}
+#navbar > li:last-child {
+	border-top-right-radius: $padding-normal;
 }
 #navbar a {
 	display: block;
@@ -131,8 +137,8 @@ header {
 	background-color: lighten($highlight-color, $darken-amount);
 }
 .drop-down a {
-	color: lighten($primary-color, 1.5*$darken-amount) !important;
-	// color: darken($wrap-color, $darken-amount) !important;
+	color: $primary-color !important;
+	padding: 0.5*$padding-normal $padding-normal !important;
 }
 .drop-down a:hover {
 	background-color: $highlight-color;
