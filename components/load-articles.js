@@ -57,19 +57,16 @@ function navDirectoryAscending(directory, category) {
 		category = "index";
 	}
 
-	var navButtons = '<ul>';
 	if (index < dirItems.length) {
-		navButtons += '<li><a class="button" href="'+category+'.html'
-				   +'?index='+index+'">Older Articles</a></li>';
+		$(document).find('#navButtons a:first-child').attr('href', category+'.html?index='+index);
+	} else {
+		$(document).find('#navButtons a:first-child').hide();
 	}
 	if (startingIndex > 0) {
-		navButtons += '<li><a class="button" href="'+category+'.html'
-				   +'?index='+(startingIndex-1)
-				   +'&amp;order=descending">Newer Articles</a></li>';
+		$(document).find('#navButtons a:last-child').attr('href', category+'.html?index='+(startingIndex-1)+'&order=descending');
+	} else {
+		$(document).find('#navButtons a:last-child').hide();
 	}
-	navButtons += '</ul>';
-
-	$("#navButtons").append(navButtons);
 }
 function loadArticleAscending(date, fileName) {
 	$.get (
@@ -122,19 +119,16 @@ function navDirectoryDescending(directory, category) {
 		category = "index";
 	}
 
-	var navButtons = '<ul>';
 	if (startingIndex < dirItems.length) {
-		navButtons += '<li><a class="button" href="'+category+'.html'
-				   +'?index='+(startingIndex+1)+'">Older Articles</a></li>';
+		$(document).find('#navButtons a:first-child').attr('href', category+'.html?index='+(startingIndex+1));
+	} else {
+		$(document).find('#navButtons a:first-child').hide();
 	}
 	if (index > lastDefaultIndex) {
-		navButtons += '<li><a class="button" href="'+category+'.html'
-				   +'?index='+index
-				   +'&amp;order=descending">Newer Articles</a></li>';
+		$(document).find('#navButtons a:last-child').attr('href', category+'.html?index='+index+'&order=descending');
+	} else {
+		$(document).find('#navButtons a:last-child').hide();
 	}
-	navButtons += '</ul>';
-
-	$("#navButtons").append(navButtons);
 }
 function loadArticleDescending(date, fileName) {
 	$.get (

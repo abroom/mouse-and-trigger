@@ -161,7 +161,21 @@ header {
 // navButtons
 #navButtons {
 	text-align: center;
-	margin: $padding-normal;
+	margin: 0 3*$padding-normal;
+}
+#navButtons:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#navButtons a:first-child {
+	float: left;
+}
+#navButtons a:last-child {
+	float: right;
 }
 #navButtons ul {
 	display: inline-block;

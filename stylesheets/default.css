@@ -149,7 +149,21 @@ header {
 
 #navButtons {
   text-align: center;
-  margin: 20px; }
+  margin: 0 60px; }
+
+#navButtons:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#navButtons a:first-child {
+  float: left; }
+
+#navButtons a:last-child {
+  float: right; }
 
 #navButtons ul {
   display: inline-block; }
