@@ -121,6 +121,12 @@ header {
 	background: none;
 	background-color: darken($wrap-color, 1.5*$darken-amount);
 }
+#navbar > li:first-child > a:active {
+	border-top-left-radius: $padding-normal;
+}
+#navbar > li:last-child > a:active {
+	border-top-right-radius: $padding-normal;
+}
 
 // drop down menu styling
 .drop-down {

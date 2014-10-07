@@ -116,6 +116,12 @@ header {
   background: none;
   background-color: #c8c8c8; }
 
+#navbar > li:first-child > a:active {
+  border-top-left-radius: 20px; }
+
+#navbar > li:last-child > a:active {
+  border-top-right-radius: 20px; }
+
 .drop-down {
   display: none; }
 
