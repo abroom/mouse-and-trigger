@@ -30,9 +30,16 @@ function loadDirectory(category) {
 }
 
 function navDirectoryAscending(directory, category) {
+	// Directory of Articles
 	var dirItems = directory.split("\n");
+
+	// Index for directory
 	var index = getIndex();
 	var startingIndex = index;
+
+	// Booleans for whether newest or oldest article is listed
+	var hasNewest = false;
+	var hasOldest = false;
 
 	if (category) {
 		var i = 0;
@@ -40,6 +47,12 @@ function navDirectoryAscending(directory, category) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
 				loadArticleAscending(article[0],article[1]);
+				if (article[3] == "oldest") {
+					hasOldest = true;
+					break; // no need to continue
+				} else if (article[3] == "newest") {
+					hasNewest = true;
+				}
 				i++;
 			}
 			index++;
@@ -57,12 +70,14 @@ function navDirectoryAscending(directory, category) {
 		category = "index";
 	}
 
-	if (index < dirItems.length) {
+	// Older Articles button
+	if (index < dirItems.length && !hasOldest) {
 		$(document).find('#navButtons a:first-child').attr('href', category+'.html?index='+index);
 	} else {
 		$(document).find('#navButtons a:first-child').hide();
 	}
-	if (startingIndex > 0) {
+	// Newer Articles button
+	if (startingIndex > 0 && !hasNewest) {
 		$(document).find('#navButtons a:last-child').attr('href', category+'.html?index='+(startingIndex-1)+'&order=descending');
 	} else {
 		$(document).find('#navButtons a:last-child').hide();
@@ -82,30 +97,32 @@ function writeArticleAscending(article, date, fileName) {
 }
 
 function navDirectoryDescending(directory, category) {
+	// Directory of articles
 	var dirItems = directory.split("\n");
+
+	// Index for directory
 	var index = getIndex();
 	var startingIndex = index;
 
+	// Booleans for whether list has newest and/or oldest
+	var hasOldest = false;
+	var hasNewest = false;
+
 	if (category) {
 		var i = 0;
-		if (category == "other") {
-			while(i < articlesPerPage && index >= 0) {
-				var article = dirItems[index].split(" ");
-				if ("videoGames" != article[2]) {
-					loadArticleDescending(article[0],article[1]);
-					i++;
+		while(i < articlesPerPage && index >= 0) {
+			var article = dirItems[index].split(" ");
+			if (category == article[2]) {
+				loadArticleDescending(article[0],article[1]);
+				if (article[3] == "oldest") {
+					hasOldest = true;
+				} else if (article[3] == "newest") {
+					hasNewest = true;
+					break; // No need to continue
 				}
-				index--;
+				i++;
 			}
-		} else {
-			while(i < articlesPerPage && index >= 0) {
-				var article = dirItems[index].split(" ");
-				if (category == article[2]) {
-					loadArticleDescending(article[0],article[1]);
-					i++;
-				}
-				index--;
-			}
+			index--;
 		}
 	} else {
 		for (var i = 0; i < articlesPerPage && index >= 0; i++) {
@@ -119,12 +136,12 @@ function navDirectoryDescending(directory, category) {
 		category = "index";
 	}
 
-	if (startingIndex < dirItems.length) {
+	if (startingIndex < dirItems.length && !hasOldest) {
 		$(document).find('#navButtons a:first-child').attr('href', category+'.html?index='+(startingIndex+1));
 	} else {
 		$(document).find('#navButtons a:first-child').hide();
 	}
-	if (index > lastDefaultIndex) {
+	if (index > lastDefaultIndex && !hasNewest) {
 		$(document).find('#navButtons a:last-child').attr('href', category+'.html?index='+index+'&order=descending');
 	} else {
 		$(document).find('#navButtons a:last-child').hide();
@@ -151,6 +168,7 @@ function writeArticle(article, date, fileName) {
 	if (typeof authorPortrait == 'undefined') {
 		authorPortrait = "components/images/logo.png";
 	}
+	var authorSource = $(article).find('#author').attr('href');
 	var title = $(article).find('#article-title').html();
 	var sub = $(article).find('#article-sub').html();
 	var bannerSrc = $(article).find('#article-banner').attr('src');
@@ -163,7 +181,7 @@ function writeArticle(article, date, fileName) {
 	var blurb = $(article).find('#article-blurb').html();
 
 	var output = '<div class="article">'
-			   + '<img class="author-portrait" src="'+authorPortrait+'">'
+			   + '<a href="'+authorSource+'"><img class="author-portrait" src="'+authorPortrait+'"></a>'
 			   + '<h2 class="title"><a '+link+'>'+title+'</a></h2>'
 			   + '<h4 class="sub">'+sub+'</h4>'
 			   + '<img class="banner" src="'+bannerSrc+'" alt="'+bannerAlt+'">'
