@@ -1,5 +1,9 @@
 // Variables for scss
 
+// Commonly Used Variables
+$darken-amount: 10%;
+$padding-normal: 20px;
+
 // Font Styling
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
@@ -8,13 +12,9 @@ $highlight-color: #bd6c96;
 
 // Page Styling
 $html-color: $alternate-color;
-$header-color: #FFF;
 $wrap-color: #eee;
-$footer-color: $header-color;
+$wrap-background-color: white;
 
-$darken-amount: 10%;
-
-$padding-normal: 20px;
 $content-width: 1000px;
 
 // Logo
@@ -30,5 +30,9 @@ $portrait-size-thumb: 150px;
 // Navbar
 $navbar-font-size: 23px;
 
+// Header
+$header-color: darken($alternate-color, 3*$darken-amount);
+
 // Footer
-$footer-height: 150px;
+$footer-color: $header-color;
+$footer-height: 50px;

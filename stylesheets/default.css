@@ -44,7 +44,7 @@ body {
   background: #bd6c96; }
 
 header {
-  background-color: #FFF; }
+  background-color: #424242; }
 
 #logo-title {
   padding: 20px; }
@@ -68,13 +68,13 @@ header {
 
 #navbar {
   list-style-type: none;
-  background: -webkit-linear-gradient(#eee, #d4d4d4);
+  background: -webkit-linear-gradient(#c57ea3, #bd6c96);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#eee, #d4d4d4);
+  background: -o-linear-gradient(#c57ea3, #bd6c96);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#eee, #d4d4d4);
+  background: -moz-linear-gradient(#c57ea3, #bd6c96);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#eee, #d4d4d4);
+  background: linear-gradient(#c57ea3, #bd6c96);
   /* Standard syntax */
   border-radius: 20px 20px 0 0; }
 
@@ -98,23 +98,23 @@ header {
 #navbar a {
   display: block;
   padding: 20px;
-  color: #bd6c96;
+  color: #333;
   text-decoration: none;
   font-size: 23px; }
 
 #navbar > li:hover {
-  background: -webkit-linear-gradient(#e1e1e1, #c8c8c8);
+  background: -webkit-linear-gradient(#bd6c96, #b55a89);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#e1e1e1, #c8c8c8);
+  background: -o-linear-gradient(#bd6c96, #b55a89);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#e1e1e1, #c8c8c8);
+  background: -moz-linear-gradient(#bd6c96, #b55a89);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#e1e1e1, #c8c8c8);
+  background: linear-gradient(#bd6c96, #b55a89);
   /* Standard syntax */ }
 
 #navbar > li > a:active {
   background: none;
-  background-color: #c8c8c8; }
+  background-color: #b55a89; }
 
 #navbar > li:first-child > a:active {
   border-top-left-radius: 20px; }
@@ -126,10 +126,10 @@ header {
   cursor: pointer; }
 
 .active {
-  background: #c8c8c8; }
+  background: #b55a89; }
 
 .active:hover {
-  background: #c8c8c8 !important; }
+  background: #b55a89 !important; }
 
 .drop-down {
   display: none; }
@@ -152,12 +152,12 @@ header {
   padding: 10px 20px !important; }
 
 .drop-down a:hover {
-  background-color: #bd6c96; }
+  background-color: #aa4c7d; }
 
 #wrap {
   margin: 0 auto;
   padding: 20px 0;
-  background-color: #eee; }
+  background-color: white; }
 
 #wrap > * {
   margin: 0 40px; }
@@ -191,15 +191,13 @@ header {
 footer {
   margin: 0;
   padding: 20px;
-  height: 150px;
-  background: -webkit-linear-gradient(#FFF, #8e8e8e);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#FFF, #8e8e8e);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#FFF, #8e8e8e);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#FFF, #8e8e8e);
-  /* Standard syntax */ }
+  min-height: 50px;
+  background-color: #424242; }
+
+footer * {
+  margin: 0 20px;
+  text-align: right;
+  color: #eee; }
 
 .content-container {
   margin: 0 auto;
