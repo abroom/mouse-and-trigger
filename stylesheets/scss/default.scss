@@ -187,6 +187,8 @@ header {
 #navButtons {
 	text-align: center;
 	margin: 0 3*$padding-normal;
+	margin-top: 3*$padding-normal;
+	margin-bottom: $padding-normal;
 }
 #navButtons:after {
 	content: ".";
