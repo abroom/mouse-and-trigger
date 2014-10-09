@@ -1,6 +1,6 @@
 .article {
   text-align: left;
-  padding-bottom: 40px; }
+  padding: 0; }
 
 .article:first-child {
   margin-top: 20px !important; }

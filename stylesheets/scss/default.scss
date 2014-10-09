@@ -48,6 +48,16 @@ body {
 	background: $highlight-color;
 }
 
+hr {
+	margin: 2*$padding-normal;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:    -moz-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:     -ms-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:      -o-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+}
+
 // header
 header {
 	background-color: $header-color;

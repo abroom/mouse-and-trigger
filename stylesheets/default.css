@@ -43,6 +43,15 @@ body {
 .button:active {
   background: #bd6c96; }
 
+hr {
+  margin: 40px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
+  background-image: -moz-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
+  background-image: -ms-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
+  background-image: -o-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96); }
+
 header {
   background-color: #424242; }
 

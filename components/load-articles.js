@@ -46,7 +46,7 @@ function navDirectoryAscending(directory, category) {
 		while(i < articlesPerPage && index < dirItems.length) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
-				loadArticleAscending(article[0],article[1]);
+				loadArticleAscending(article[0],article[1], i);
 				if (article[3] == "oldest") {
 					hasOldest = true;
 					break; // no need to continue
@@ -60,14 +60,13 @@ function navDirectoryAscending(directory, category) {
 	} else {
 		for (var i = 0; i < articlesPerPage && index < dirItems.length; i++) {
 			var article = dirItems[index].split(" ");
-			loadArticleAscending(article[0],article[1]);
+			loadArticleAscending(article[0],article[1], i);
 			index++;
 		}
 	}
 
-
 	if (!category) {
-		category = "index";
+		category=  "index";
 	}
 
 	// Older Articles button
@@ -83,16 +82,19 @@ function navDirectoryAscending(directory, category) {
 		$(document).find('#navButtons a:last-child').hide();
 	}
 }
-function loadArticleAscending(date, fileName) {
+function loadArticleAscending(date, fileName, i) {
 	$.get (
 		'articles/'+date+'/'+fileName+'.html',
 		function(article) {
-			writeArticleAscending(article, date, fileName);
+			writeArticleAscending(article, date, fileName, i);
 		},
 		'html'
 	);
 }
-function writeArticleAscending(article, date, fileName) {
+function writeArticleAscending(article, date, fileName, i) {
+	if (i > 0) {
+		$("#articles").append('<hr>');
+	}
 	$("#articles").append(writeArticle(article, date, fileName));
 }
 
@@ -113,7 +115,7 @@ function navDirectoryDescending(directory, category) {
 		while(i < articlesPerPage && index >= 0) {
 			var article = dirItems[index].split(" ");
 			if (category == article[2]) {
-				loadArticleDescending(article[0],article[1]);
+				loadArticleDescending(article[0],article[1], i);
 				if (article[3] == "oldest") {
 					hasOldest = true;
 				} else if (article[3] == "newest") {
@@ -127,7 +129,7 @@ function navDirectoryDescending(directory, category) {
 	} else {
 		for (var i = 0; i < articlesPerPage && index >= 0; i++) {
 			var article = dirItems[index].split(" ");
-			loadArticleDescending(article[0],article[1]);
+			loadArticleDescending(article[0],article[1], i);
 			index--;
 		}
 	}
@@ -147,16 +149,19 @@ function navDirectoryDescending(directory, category) {
 		$(document).find('#navButtons a:last-child').hide();
 	}
 }
-function loadArticleDescending(date, fileName) {
+function loadArticleDescending(date, fileName, i) {
 	$.get (
 		'articles/'+date+'/'+fileName+'.html',
 		function(article) {
-			writeArticleDescending(article, date, fileName);
+			writeArticleDescending(article, date, fileName, i);
 		},
 		'html'
 	);
 }
-function writeArticleDescending(article, date, fileName) {
+function writeArticleDescending(article, date, fileName, i) {
+	if (i > 0) {
+		$("#articles").prepend('<hr>');
+	}
 	$("#articles").prepend(writeArticle(article, date, fileName));
 }
 
