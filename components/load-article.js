@@ -19,7 +19,9 @@ function getQueryVariable(variable) {
 
 // Loads article file into proper divs
 function loadArticle(articleFileLocation) {
-	$("#wrap").load(articleFileLocation);
+	$("#wrap").load(articleFileLocation, function() {
+		document.title = "MAT - " + $("#wrap").find("#article-title").text();
+	});
 }
 
 // Creates file location string
