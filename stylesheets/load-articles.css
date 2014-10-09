@@ -14,7 +14,8 @@
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  box-shadow: 0 0 50px #8e8e8e; }
+  box-shadow: 0 0 50px #8e8e8e;
+  background-color: white; }
 
 .title {
   margin: 0 20px; }
