@@ -12,7 +12,8 @@ function getContributer() {
 // Loads article file into proper divs
 function loadContributer(contributerFileLocation) {
 	$("#wrap").load(contributerFileLocation, function() {
-		document.title = "MAT - " + $("#wrap").find("#contributer-name").text() + ' - ' + $("#wrap").find("#contributer-title").text();
+		document.title = "MAT - " + $("#wrap").find("#contributer-name").text()
+						+ ' - ' + $("#wrap").find("#contributer-title").text();
 	});
 }
 

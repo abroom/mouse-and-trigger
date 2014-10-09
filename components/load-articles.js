@@ -1,7 +1,6 @@
 // Loads articles for display on index
 
 var articlesPerPage = 10;
-var lastDefaultIndex = 7;
 
 function loadArticles(category) {
 	loadDirectory(category);
@@ -143,7 +142,7 @@ function navDirectoryDescending(directory, category) {
 	} else {
 		$(document).find('#navButtons a:first-child').hide();
 	}
-	if (index > lastDefaultIndex && !hasNewest) {
+	if (index > 0 && !hasNewest) {
 		$(document).find('#navButtons a:last-child').attr('href', category+'.html?index='+index+'&order=descending');
 	} else {
 		$(document).find('#navButtons a:last-child').hide();
