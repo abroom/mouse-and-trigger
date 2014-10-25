@@ -58,6 +58,15 @@ hr {
     background-image:      -o-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
 }
 
+.float-container:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
 // header
 header {
 	background-color: $header-color;

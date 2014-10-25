@@ -5,20 +5,23 @@
 .article:first-child {
   margin-top: 20px !important; }
 
+.title-sub-portrait {
+  margin-top: 20px; }
+
 .author-portrait {
   float: right;
-  position: relative;
-  margin-left: -160px;
-  top: 0;
-  z-index: 1;
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  box-shadow: 0 0 50px #8e8e8e;
+  box-shadow: 0 0 10px #bd6c96;
   background-color: white; }
 
+.title-sub {
+  float: left; }
+
 .title {
-  margin: 0 20px; }
+  margin: 0 20px;
+  font-size: 40px; }
 
 .title a {
   text-decoration: none;
@@ -44,14 +47,13 @@
   display: block;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 80%;
-  border: 5px solid #8e8e8e;
-  border-radius: 5px;
+  width: 100%;
   background-color: white; }
 
 .blurb {
   margin: 0 60px;
-  padding: 10px 0; }
+  padding: 10px 0;
+  clear: left; }
 
 .blurb a {
   font-weight: bold;

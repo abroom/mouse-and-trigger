@@ -12,27 +12,31 @@
 	margin-top: $padding-normal !important;
 }
 
+.title-sub-portrait {
+	margin-top: $padding-normal;
+}
+
 .author-portrait {
 	float: right;
-	position: relative;
-
-	margin-left: -$portrait-size-thumb - 2*$img-border-size;
-	
-	top:0;
-	z-index: 1;
 
 	width: $portrait-size-thumb;
 	height: $portrait-size-thumb;
 
 	border-radius: $portrait-size-thumb/2;
 
-	box-shadow: 0 0 10*$img-border-size $alternate-color;
+	box-shadow: 0 0 2*$img-border-size $highlight-color;
 
 	background-color: white;
 }
 
+
+.title-sub {
+	float: left;
+}
+
 .title {
 	margin: 0 $padding-normal;
+	font-size: 40px;
 }
 .title a {
 	text-decoration: none;
@@ -60,15 +64,14 @@
     display: block;
     overflow: hidden;
     margin: 0 auto;
-    max-width: 80%;
-    border: $img-border-size solid $alternate-color;
-    border-radius: $img-border-size;
+    width: 100%;
     background-color: white;
 }
 
 .blurb {
 	margin: 0 3*$padding-normal;
 	padding: 0.5*$padding-normal 0;
+	clear: left;
 }
 .blurb a {
 	font-weight: bold;

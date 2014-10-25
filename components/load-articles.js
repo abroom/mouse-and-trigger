@@ -185,10 +185,14 @@ function writeArticle(article, date, fileName) {
 	var blurb = $(article).find('#article-blurb').html();
 
 	var output = '<div class="article">'
-			   + '<a href="'+authorSource+'"><img class="author-portrait" src="'+authorPortrait+'"></a>'
+			   + '<img class="banner" src="'+bannerSrc+'" alt="'+bannerAlt+'">'
+			   + '<div class="title-sub-portrait">'
+			   + '<div class="title-sub">'
 			   + '<h2 class="title"><a '+link+'>'+title+'</a></h2>'
 			   + '<h4 class="sub">'+sub+'</h4>'
-			   + '<img class="banner" src="'+bannerSrc+'" alt="'+bannerAlt+'">'
+			   + '</div>'
+			   + '<a href="'+authorSource+'"><img class="author-portrait" src="'+authorPortrait+'"></a>'
+			   + '</div>'
 			   + '<p class="blurb">'+blurb+'</p>'
 			   + '<a class="continue-reading" '+link+'>Continue Reading ...</a>'
 			   + '</div>';
