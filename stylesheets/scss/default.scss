@@ -191,7 +191,7 @@ header {
 // wrap
 #wrap {
 	margin: 0 auto;
-	padding: $padding-normal 0;
+	padding-bottom: 2*$padding-normal;
 	background-color: $wrap-background-color;
 }
 
