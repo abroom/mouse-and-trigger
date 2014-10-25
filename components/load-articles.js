@@ -91,9 +91,6 @@ function loadArticleAscending(date, fileName, i) {
 	);
 }
 function writeArticleAscending(article, date, fileName, i) {
-	if (i > 0) {
-		$("#articles").append('<hr>');
-	}
 	$("#articles").append(writeArticle(article, date, fileName));
 }
 

@@ -194,8 +194,12 @@ header {
 	padding: $padding-normal 0;
 	background-color: $wrap-background-color;
 }
-#wrap > * {
-	margin: 0 2*$padding-normal;
+
+// page-title
+#page-title {
+	text-align: center;
+	font-size: 100px;
+	border-bottom: $article-border solid $highlight-color;
 }
 
 // navButtons

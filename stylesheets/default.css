@@ -182,8 +182,10 @@ header {
   padding: 20px 0;
   background-color: white; }
 
-#wrap > * {
-  margin: 0 40px; }
+#page-title {
+  text-align: center;
+  font-size: 100px;
+  border-bottom: 2px solid #bd6c96; }
 
 #navButtons {
   text-align: center;
