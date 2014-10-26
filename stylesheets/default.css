@@ -93,7 +93,8 @@ header {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#c57ea3, #bd6c96);
   /* Standard syntax */
-  border-radius: 20px 20px 0 0; }
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 15px 7px 2px #424242; }
 
 #navbar:after {
   content: ".";
@@ -180,11 +181,13 @@ header {
 #wrap {
   margin: 0 auto;
   padding-bottom: 40px;
-  background-color: white; }
+  background-color: white;
+  box-shadow: 0 15px 10px 4px #424242; }
 
 #page-title {
   text-align: center;
   font-size: 100px;
+  color: #bd6c96;
   border-bottom: 2px solid #bd6c96; }
 
 #navButtons {

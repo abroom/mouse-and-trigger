@@ -104,6 +104,7 @@ header {
 	background: linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* Standard syntax */
 
 	border-radius: $padding-normal $padding-normal 0 0;
+	box-shadow: 0 15px 7px 2px $header-color;
 }
 #navbar:after {
 	content: ".";
@@ -134,6 +135,7 @@ header {
 	background: -o-linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* For Firefox 3.6 to 15 */
 	background: linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* Standard syntax */
+
 }
 #navbar > li > a:active {
 	background: none;
@@ -193,12 +195,14 @@ header {
 	margin: 0 auto;
 	padding-bottom: 2*$padding-normal;
 	background-color: $wrap-background-color;
+	box-shadow: 0 15px 10px 4px $header-color;
 }
 
 // page-title
 #page-title {
 	text-align: center;
 	font-size: 100px;
+	color: $highlight-color;
 	border-bottom: $article-border solid $highlight-color;
 }
 

@@ -5,16 +5,34 @@ a {
 a:hover {
   text-decoration: underline; }
 
-#about {
+h1, h2, h3, h4 {
+  margin: 0 20px; }
+
+p {
+  margin: 10px 80px; }
+
+.button-container {
+  margin: 0 80px; }
+
+#wrap {
+  padding: 20px 0; }
+
+#about h1 {
   margin: 0 40px;
-  text-align: left; }
+  font-size: 50px; }
+
+#contact {
+  margin: 20px; }
+
+#contact a {
+  margin: 10px;
+  margin-left: 0; }
 
 #contributers {
-  margin: 0 40px;
-  margin-top: 20px; }
+  margin: 20px; }
 
 #contributers ul {
-  margin: 0 20px;
+  margin: 0 80px;
   list-style: none; }
 
 #contributers a {

@@ -4,8 +4,18 @@
 #article > *:not(#article-banner) {
   padding: 0 40px; }
 
+#article-banner {
+  margin-bottom: 20px;
+  width: 100%; }
+
 #article hr {
   margin: 0; }
+
+#article-title-sub {
+  float: left;
+  border-bottom: 2px solid #bd6c96;
+  padding: 0 20px;
+  margin-bottom: 20px; }
 
 #article-author-portrait {
   float: right; }
@@ -19,18 +29,15 @@
 #article-title {
   margin: 0 20px; }
 
-#article-banner {
-  margin-bottom: 20px;
-  width: 100%; }
-
 #article-sub {
-  margin: 0 40px;
+  margin-left: 40px;
   margin-bottom: 10px;
   font-weight: normal;
   font-style: italic; }
 
 #article-body {
-  margin: 0 60px; }
+  margin: 0 60px;
+  clear: left; }
 
 #article-blurb {
   margin-top: 15px !important;

@@ -8,8 +8,20 @@
     padding: 0 2*$padding-normal;
 }
 
+#article-banner {
+    margin-bottom: $padding-normal;
+    width: 100%;
+}
+
 #article hr {
     margin: 0;
+}
+
+#article-title-sub {
+    float: left;
+    border-bottom: $article-border solid $highlight-color;
+    padding: 0 $padding-normal;
+    margin-bottom: $padding-normal;
 }
 
 #article-author-portrait {
@@ -27,13 +39,8 @@
     margin: 0 $padding-normal;
 }
 
-#article-banner {
-    margin-bottom: $padding-normal;
-    width: 100%;
-}
-
 #article-sub {
-    margin: 0 2*$padding-normal;
+    margin-left: 2*$padding-normal;
     margin-bottom: 0.5*$padding-normal;
     font-weight: normal;
     font-style: italic;
@@ -41,6 +48,7 @@
 
 #article-body {
     margin: 0 3*$padding-normal;
+    clear: left;
 }
 
 #article-blurb {

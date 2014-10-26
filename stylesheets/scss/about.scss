@@ -9,19 +9,39 @@ a {
 a:hover {
     text-decoration: underline; 
 }
+h1, h2, h3, h4 {
+    margin: 0 $padding-normal;
+}
+p {
+    margin: $padding-normal/2 4*$padding-normal;
+}
 
 // Specific
-#about {
+.button-container {
+    margin: 0 4*$padding-normal;
+}
+#wrap {
+    padding: $padding-normal 0;
+}
+
+#about h1 {
     margin: 0 2*$padding-normal;
-    text-align: left;
+    font-size: 50px;
+}
+
+#contact {
+    margin: $padding-normal;
+}
+#contact a {
+    margin: $padding-normal/2;
+    margin-left: 0;
 }
 
 #contributers {
-    margin: 0 2*$padding-normal;
-    margin-top: $padding-normal;
+    margin: $padding-normal;
 }
 #contributers ul {
-    margin: 0 $padding-normal;
+    margin: 0 4*$padding-normal;
     list-style: none;
 }
 #contributers a {
