@@ -1,6 +1,18 @@
 // Import Variables
 @import "utilities/variables";
 
+.button-container {
+	margin: $padding-normal/2 4*$padding-normal;
+}
+
+.content-container > * {
+	padding: 0 2*$padding-normal;
+}
+
+#name-title-portrait {
+	padding-top: $padding-normal;
+}
+
 #name-title h2 {
 	margin: 0 $padding-normal;
 	color: $highlight-color;
@@ -24,8 +36,8 @@
 }
 
 #links {
-	margin-top: 2*$padding-normal;
+	margin-top: 3*$padding-normal;
 }
 #links a {
-	margin: 0.5*$padding-normal;
+	margin: 0 0.5*$padding-normal $padding-normal 0;
 }

@@ -1,3 +1,12 @@
+.button-container {
+  margin: 10px 80px; }
+
+.content-container > * {
+  padding: 0 40px; }
+
+#name-title-portrait {
+  padding-top: 20px; }
+
 #name-title h2 {
   margin: 0 20px;
   color: #bd6c96; }
@@ -18,9 +27,9 @@
   margin: 20px 60px; }
 
 #links {
-  margin-top: 40px; }
+  margin-top: 60px; }
 
 #links a {
-  margin: 10px; }
+  margin: 0 10px 20px 0; }
 
 /*# sourceMappingURL=contributer.css.map */
