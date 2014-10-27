@@ -1,7 +1,7 @@
 .button-container {
   margin: 10px 80px; }
 
-.content-container > * {
+#wrap > * {
   padding: 0 40px; }
 
 #name-title-portrait {
