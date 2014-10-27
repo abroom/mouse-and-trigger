@@ -2,18 +2,28 @@
 @import "utilities/variables";
 
 // General styling
+b {
+    color: $highlight-color;
+}
 a {
     color: $highlight-color;
     text-decoration: none;
 }
-a:hover {
+a:not(.button):hover {
     text-decoration: underline; 
 }
-h1, h2, h3, h4 {
+h1 {
     margin: 0 $padding-normal;
+}
+h2 {
+    margin: 0 2*$padding-normal;
 }
 p {
     margin: $padding-normal/2 4*$padding-normal;
+    margin-top: 0;
+}
+div {
+    margin-bottom: $padding-normal;
 }
 
 // Specific
@@ -29,17 +39,11 @@ p {
     font-size: 50px;
 }
 
-#contact {
-    margin: $padding-normal;
-}
 #contact a {
     margin: $padding-normal/2;
     margin-left: 0;
 }
 
-#contributers {
-    margin: $padding-normal;
-}
 #contributers ul {
     margin: 0 4*$padding-normal;
     list-style: none;

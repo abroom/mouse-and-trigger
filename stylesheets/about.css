@@ -1,15 +1,25 @@
+b {
+  color: #bd6c96; }
+
 a {
   color: #bd6c96;
   text-decoration: none; }
 
-a:hover {
+a:not(.button):hover {
   text-decoration: underline; }
 
-h1, h2, h3, h4 {
+h1 {
   margin: 0 20px; }
 
+h2 {
+  margin: 0 40px; }
+
 p {
-  margin: 10px 80px; }
+  margin: 10px 80px;
+  margin-top: 0; }
+
+div {
+  margin-bottom: 20px; }
 
 .button-container {
   margin: 0 80px; }
@@ -21,15 +31,9 @@ p {
   margin: 0 40px;
   font-size: 50px; }
 
-#contact {
-  margin: 20px; }
-
 #contact a {
   margin: 10px;
   margin-left: 0; }
-
-#contributers {
-  margin: 20px; }
 
 #contributers ul {
   margin: 0 80px;
