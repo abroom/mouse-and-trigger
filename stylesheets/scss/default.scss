@@ -32,6 +32,7 @@ body {
 
 	border-radius: 0.5*$padding-normal;
 	padding: 0.5*$padding-normal;
+	margin: 0 0.5*$padding-normal $padding-normal 0;
 
 	background: -webkit-linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* For Opera 11.1 to 12.0 */

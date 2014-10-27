@@ -1,8 +1,12 @@
 // Import Variables
 @import "utilities/variables";
 
+b {
+	color: $highlight-color;
+}
+
 .button-container {
-	margin: $padding-normal/2 4*$padding-normal;
+	margin: $padding-normal/2 2*$padding-normal;
 }
 
 #wrap > * {
@@ -32,12 +36,13 @@
 	margin: $padding-normal;
 }
 #about p {
-	margin: $padding-normal 3*$padding-normal;
+	margin: $padding-normal;
+}
+#favorites {
+	list-style: none;
+	margin: 0 $padding-normal;
 }
 
 #links {
 	margin-top: 3*$padding-normal;
-}
-#links a {
-	margin: 0 0.5*$padding-normal $padding-normal 0;
 }

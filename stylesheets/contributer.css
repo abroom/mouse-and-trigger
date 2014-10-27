@@ -1,5 +1,8 @@
+b {
+  color: #bd6c96; }
+
 .button-container {
-  margin: 10px 80px; }
+  margin: 10px 40px; }
 
 #wrap > * {
   padding: 0 40px; }
@@ -24,12 +27,13 @@
   margin: 20px; }
 
 #about p {
-  margin: 20px 60px; }
+  margin: 20px; }
+
+#favorites {
+  list-style: none;
+  margin: 0 20px; }
 
 #links {
   margin-top: 60px; }
-
-#links a {
-  margin: 0 10px 20px 0; }
 
 /*# sourceMappingURL=contributer.css.map */

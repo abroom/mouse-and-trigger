@@ -21,6 +21,7 @@ body {
   color: #333;
   border-radius: 10px;
   padding: 10px;
+  margin: 0 10px 20px 0;
   background: -webkit-linear-gradient(#ddb2c8, #cd8faf);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#ddb2c8, #cd8faf);
