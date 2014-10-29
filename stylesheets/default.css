@@ -22,36 +22,36 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin: 0 10px 20px 0;
-  background: -webkit-linear-gradient(#ddb2c8, #cd8faf);
+  background: -webkit-linear-gradient(#fbc1de, #f990c5);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ddb2c8, #cd8faf);
+  background: -o-linear-gradient(#fbc1de, #f990c5);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ddb2c8, #cd8faf);
+  background: -moz-linear-gradient(#fbc1de, #f990c5);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ddb2c8, #cd8faf);
+  background: linear-gradient(#fbc1de, #f990c5);
   /* Standard syntax */ }
 
 .button:hover {
-  background: -webkit-linear-gradient(#cd8faf, #bd6c96);
+  background: -webkit-linear-gradient(#f990c5, #f660ab);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#cd8faf, #bd6c96);
+  background: -o-linear-gradient(#f990c5, #f660ab);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#cd8faf, #bd6c96);
+  background: -moz-linear-gradient(#f990c5, #f660ab);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#cd8faf, #bd6c96);
+  background: linear-gradient(#f990c5, #f660ab);
   /* Standard syntax */ }
 
 .button:active {
-  background: #bd6c96; }
+  background: #f660ab; }
 
 hr {
   margin: 40px;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
-  background-image: -moz-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
-  background-image: -ms-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96);
-  background-image: -o-linear-gradient(left, #bd6c96, #cd8faf, #bd6c96); }
+  background-image: -webkit-linear-gradient(left, #f660ab, #f990c5, #f660ab);
+  background-image: -moz-linear-gradient(left, #f660ab, #f990c5, #f660ab);
+  background-image: -ms-linear-gradient(left, #f660ab, #f990c5, #f660ab);
+  background-image: -o-linear-gradient(left, #f660ab, #f990c5, #f660ab); }
 
 .float-container:after {
   content: ".";
@@ -86,13 +86,13 @@ header {
 
 #navbar {
   list-style-type: none;
-  background: -webkit-linear-gradient(#c57ea3, #bd6c96);
+  background: -webkit-linear-gradient(#f778b8, #f660ab);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#c57ea3, #bd6c96);
+  background: -o-linear-gradient(#f778b8, #f660ab);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#c57ea3, #bd6c96);
+  background: -moz-linear-gradient(#f778b8, #f660ab);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#c57ea3, #bd6c96);
+  background: linear-gradient(#f778b8, #f660ab);
   /* Standard syntax */
   border-radius: 20px 20px 0 0;
   box-shadow: 0 15px 7px 2px #424242; }
@@ -122,18 +122,18 @@ header {
   font-size: 23px; }
 
 #navbar > li:hover {
-  background: -webkit-linear-gradient(#bd6c96, #b55a89);
+  background: -webkit-linear-gradient(#f660ab, #f5489e);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#bd6c96, #b55a89);
+  background: -o-linear-gradient(#f660ab, #f5489e);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#bd6c96, #b55a89);
+  background: -moz-linear-gradient(#f660ab, #f5489e);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#bd6c96, #b55a89);
+  background: linear-gradient(#f660ab, #f5489e);
   /* Standard syntax */ }
 
 #navbar > li > a:active {
   background: none;
-  background-color: #b55a89; }
+  background-color: #f5489e; }
 
 #navbar > li:first-child > a:active {
   border-top-left-radius: 20px; }
@@ -151,10 +151,10 @@ header {
   user-select: none; }
 
 .active {
-  background: #b55a89; }
+  background: #f5489e; }
 
 .active:hover {
-  background: #b55a89 !important; }
+  background: #f5489e !important; }
 
 .drop-down {
   display: none; }
@@ -166,7 +166,7 @@ header {
   position: absolute;
   float: none;
   list-style-type: none;
-  background-color: #cd8faf;
+  background-color: #f990c5;
   border-bottom-right-radius: 20px; }
 
 .drop-down li:last-child a {
@@ -177,7 +177,7 @@ header {
   padding: 10px 20px !important; }
 
 .drop-down a:hover {
-  background-color: #aa4c7d; }
+  background-color: #f33092; }
 
 #wrap {
   margin: 0 auto;
@@ -188,8 +188,8 @@ header {
 #page-title {
   text-align: center;
   font-size: 100px;
-  color: #bd6c96;
-  border-bottom: 2px solid #bd6c96; }
+  color: #f660ab;
+  border-bottom: 2px solid #f660ab; }
 
 #navButtons {
   text-align: center;
@@ -222,8 +222,7 @@ header {
 footer {
   margin: 0;
   padding: 20px;
-  min-height: 50px;
-  background-color: #424242; }
+  min-height: 50px; }
 
 footer * {
   margin: 0 20px;

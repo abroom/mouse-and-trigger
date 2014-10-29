@@ -1,8 +1,8 @@
 b {
-  color: #bd6c96; }
+  color: #f660ab; }
 
 a {
-  color: #bd6c96;
+  color: #f660ab;
   text-decoration: none; }
 
 a:not(.button):hover {
@@ -30,10 +30,6 @@ div {
 #about h1 {
   margin: 0 40px;
   font-size: 50px; }
-
-#contact a {
-  margin: 10px;
-  margin-left: 0; }
 
 #contributers ul {
   margin: 0 80px;

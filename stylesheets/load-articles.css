@@ -1,7 +1,7 @@
 .article {
   text-align: left;
   padding-bottom: 80px;
-  border-bottom: 2px solid #bd6c96; }
+  border-bottom: 2px solid #f660ab; }
 
 .article > *:not(.banner) {
   padding: 0 40px; }
@@ -14,7 +14,7 @@
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  box-shadow: 0 0 10px #bd6c96;
+  box-shadow: 0 0 10px #f660ab;
   background-color: white; }
 
 .title-sub {
@@ -29,7 +29,7 @@
   color: #333; }
 
 .title a:hover {
-  color: #bd6c96; }
+  color: #f660ab; }
 
 .sub {
   margin: 0 40px;
@@ -39,7 +39,7 @@
 
 .sub a {
   text-decoration: none;
-  color: #bd6c96; }
+  color: #f660ab; }
 
 .sub a:hover {
   text-decoration: underline; }
@@ -58,7 +58,7 @@
 
 .blurb a {
   font-weight: bold;
-  color: #bd6c96;
+  color: #f660ab;
   text-decoration: none; }
 
 .blurb a:hover {
@@ -67,7 +67,7 @@
 .continue-reading {
   margin: 0 40px;
   text-decoration: none;
-  color: #bd6c96; }
+  color: #f660ab; }
 
 .continue-reading:hover {
   text-decoration: underline; }

@@ -13,7 +13,7 @@
 
 #article-title-sub {
   float: left;
-  border-bottom: 2px solid #bd6c96;
+  border-bottom: 2px solid #f660ab;
   padding: 0 20px;
   margin-bottom: 20px; }
 
@@ -24,7 +24,7 @@
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  box-shadow: 0 0 10px #bd6c96; }
+  box-shadow: 0 0 10px #f660ab; }
 
 #article-title {
   margin: 0 20px; }
@@ -47,7 +47,7 @@
   margin-top: 5px; }
 
 a {
-  color: #bd6c96;
+  color: #f660ab;
   text-decoration: none; }
 
 a:hover {
