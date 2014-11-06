@@ -17,7 +17,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 
-	font: 20px $font-stack;
+	font: 1em $font-stack;
 	text-align: center;
 	color: $primary-color;
 }
@@ -32,21 +32,22 @@ body {
 
 	border-radius: 0.5*$padding-normal;
 	padding: 0.5*$padding-normal;
-	margin: 0 0.5*$padding-normal $padding-normal 0;
+	margin: 0.5*$padding-normal 0.5*$padding-normal 0 0;
 
-	background: -webkit-linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(lighten($highlight-color, 2*$darken-amount), lighten($highlight-color, $darken-amount)); /* Standard syntax */
+	background: -webkit-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* Standard syntax */
 }
 .button:hover {
-	background: -webkit-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(lighten($highlight-color, $darken-amount), $highlight-color); /* Standard syntax */
+	background: -webkit-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* Standard syntax */
 }
 .button:active {
 	background: $highlight-color;
+	box-shadow: 0 0 10px 2px darken($highlight-color, 0.5*$darken-amount) inset;
 }
 
 hr {
@@ -71,6 +72,7 @@ hr {
 // header
 header {
 	background-color: $header-color;
+	position: relative;
 }
 
 // Logo and title formatting
@@ -105,7 +107,6 @@ header {
 	background: linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* Standard syntax */
 
 	border-radius: $padding-normal $padding-normal 0 0;
-	box-shadow: 0 15px 7px 2px $header-color;
 }
 #navbar:after {
 	content: ".";
@@ -141,6 +142,7 @@ header {
 #navbar > li > a:active {
 	background: none;
 	background-color: darken($highlight-color, 0.5*$darken-amount);
+	box-shadow: 0 0 3px 2px darken($highlight-color, $darken-amount) inset;
 }
 #navbar > li:first-child > a:active {
 	border-top-left-radius: $padding-normal;
@@ -161,6 +163,7 @@ header {
 }
 .active {
 	background: darken($highlight-color, 0.5*$darken-amount);
+	box-shadow: 0 0 3px 2px darken($highlight-color, $darken-amount) inset;
 }
 .active:hover {
 	background: darken($highlight-color, 0.5*$darken-amount) !important;
@@ -168,6 +171,7 @@ header {
 
 .drop-down {
 	display: none;
+	box-shadow: 1px 1px 2px $header-color;
 }
 #navbar li:hover > .drop-down, .active > .drop-down {
 	display: block;
@@ -196,13 +200,14 @@ header {
 	margin: 0 auto;
 	padding-bottom: 2*$padding-normal;
 	background-color: $wrap-background-color;
-	box-shadow: 0 15px 10px 4px $header-color;
+	box-shadow: 0 3px 10px 4px $header-color;
 }
 
 // page-title
 #page-title {
+	padding-top: 10px;
 	text-align: center;
-	font-size: 100px;
+	font-size: 4em;
 	color: $highlight-color;
 	border-bottom: $article-border solid $highlight-color;
 }
@@ -241,7 +246,6 @@ header {
 footer {
 	margin: 0;
 	padding: $padding-normal;
-	min-height: $footer-height;
 }
 footer * {
 	margin: 0 $padding-normal;

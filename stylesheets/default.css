@@ -9,7 +9,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  font: 20px Helvetica, sans-serif;
+  font: 1em Helvetica, sans-serif;
   text-align: center;
   color: #333; }
 
@@ -21,37 +21,38 @@ body {
   color: #333;
   border-radius: 10px;
   padding: 10px;
-  margin: 0 10px 20px 0;
-  background: -webkit-linear-gradient(#fbc1de, #f990c5);
+  margin: 10px 10px 0 0;
+  background: -webkit-linear-gradient(#fdd7ea, #fbbfde);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fbc1de, #f990c5);
+  background: -o-linear-gradient(#fdd7ea, #fbbfde);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fbc1de, #f990c5);
+  background: -moz-linear-gradient(#fdd7ea, #fbbfde);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fbc1de, #f990c5);
+  background: linear-gradient(#fdd7ea, #fbbfde);
   /* Standard syntax */ }
 
 .button:hover {
-  background: -webkit-linear-gradient(#f990c5, #f660ab);
+  background: -webkit-linear-gradient(#fbbfde, #faa7d1);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f990c5, #f660ab);
+  background: -o-linear-gradient(#fbbfde, #faa7d1);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f990c5, #f660ab);
+  background: -moz-linear-gradient(#fbbfde, #faa7d1);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f990c5, #f660ab);
+  background: linear-gradient(#fbbfde, #faa7d1);
   /* Standard syntax */ }
 
 .button:active {
-  background: #f660ab; }
+  background: #faa7d1;
+  box-shadow: 0 0 10px 2px #f98fc4 inset; }
 
 hr {
   margin: 40px;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, #f660ab, #f990c5, #f660ab);
-  background-image: -moz-linear-gradient(left, #f660ab, #f990c5, #f660ab);
-  background-image: -ms-linear-gradient(left, #f660ab, #f990c5, #f660ab);
-  background-image: -o-linear-gradient(left, #f660ab, #f990c5, #f660ab); }
+  background-image: -webkit-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -moz-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -ms-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -o-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1); }
 
 .float-container:after {
   content: ".";
@@ -62,7 +63,8 @@ hr {
   height: 0; }
 
 header {
-  background-color: #424242; }
+  background-color: #424242;
+  position: relative; }
 
 #logo-title {
   padding: 20px; }
@@ -86,16 +88,15 @@ header {
 
 #navbar {
   list-style-type: none;
-  background: -webkit-linear-gradient(#f778b8, #f660ab);
+  background: -webkit-linear-gradient(#fbbfde, #faa7d1);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f778b8, #f660ab);
+  background: -o-linear-gradient(#fbbfde, #faa7d1);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f778b8, #f660ab);
+  background: -moz-linear-gradient(#fbbfde, #faa7d1);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f778b8, #f660ab);
+  background: linear-gradient(#fbbfde, #faa7d1);
   /* Standard syntax */
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0 15px 7px 2px #424242; }
+  border-radius: 20px 20px 0 0; }
 
 #navbar:after {
   content: ".";
@@ -119,21 +120,22 @@ header {
   padding: 20px;
   color: #333;
   text-decoration: none;
-  font-size: 23px; }
+  font-size: 1em; }
 
 #navbar > li:hover {
-  background: -webkit-linear-gradient(#f660ab, #f5489e);
+  background: -webkit-linear-gradient(#faa7d1, #f98fc4);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f660ab, #f5489e);
+  background: -o-linear-gradient(#faa7d1, #f98fc4);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f660ab, #f5489e);
+  background: -moz-linear-gradient(#faa7d1, #f98fc4);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f660ab, #f5489e);
+  background: linear-gradient(#faa7d1, #f98fc4);
   /* Standard syntax */ }
 
 #navbar > li > a:active {
   background: none;
-  background-color: #f5489e; }
+  background-color: #f98fc4;
+  box-shadow: 0 0 3px 2px #f777b8 inset; }
 
 #navbar > li:first-child > a:active {
   border-top-left-radius: 20px; }
@@ -151,13 +153,15 @@ header {
   user-select: none; }
 
 .active {
-  background: #f5489e; }
+  background: #f98fc4;
+  box-shadow: 0 0 3px 2px #f777b8 inset; }
 
 .active:hover {
-  background: #f5489e !important; }
+  background: #f98fc4 !important; }
 
 .drop-down {
-  display: none; }
+  display: none;
+  box-shadow: 1px 1px 2px #424242; }
 
 #navbar li:hover > .drop-down, .active > .drop-down {
   display: block; }
@@ -166,7 +170,7 @@ header {
   position: absolute;
   float: none;
   list-style-type: none;
-  background-color: #f990c5;
+  background-color: #fdd7ea;
   border-bottom-right-radius: 20px; }
 
 .drop-down li:last-child a {
@@ -177,19 +181,20 @@ header {
   padding: 10px 20px !important; }
 
 .drop-down a:hover {
-  background-color: #f33092; }
+  background-color: #f777b8; }
 
 #wrap {
   margin: 0 auto;
   padding-bottom: 40px;
   background-color: white;
-  box-shadow: 0 15px 10px 4px #424242; }
+  box-shadow: 0 3px 10px 4px #424242; }
 
 #page-title {
+  padding-top: 10px;
   text-align: center;
-  font-size: 100px;
-  color: #f660ab;
-  border-bottom: 2px solid #f660ab; }
+  font-size: 4em;
+  color: #faa7d1;
+  border-bottom: 2px solid #faa7d1; }
 
 #navButtons {
   text-align: center;
@@ -221,8 +226,7 @@ header {
 
 footer {
   margin: 0;
-  padding: 20px;
-  min-height: 50px; }
+  padding: 20px; }
 
 footer * {
   margin: 0 20px;

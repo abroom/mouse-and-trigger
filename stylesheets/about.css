@@ -1,8 +1,8 @@
 b {
-  color: #f660ab; }
+  color: #faa7d1; }
 
 a {
-  color: #f660ab;
+  color: #faa7d1;
   text-decoration: none; }
 
 a:not(.button):hover {
@@ -29,13 +29,13 @@ div {
 
 #about h1 {
   margin: 0 40px;
-  font-size: 50px; }
+  font-size: 2.5em; }
 
 #contributors ul {
   margin: 0 80px;
   list-style: none; }
 
 #contributors a {
-  font-size: 23px; }
+  font-size: 1em; }
 
 /*# sourceMappingURL=about.css.map */

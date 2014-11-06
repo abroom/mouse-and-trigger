@@ -8,7 +8,7 @@ $padding-normal: 20px;
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $alternate-color: #8e8e8e;
-$highlight-color: #f660ab;//#bd6c96;
+$highlight-color: #faa7d1; //#f660ab;//#bd6c96;
 
 // Page Styling
 $html-color: $alternate-color;
@@ -31,7 +31,7 @@ $portrait-size: 300px;
 $portrait-size-thumb: 150px;
 
 // Navbar
-$navbar-font-size: 23px;
+$navbar-font-size: 1em;
 
 // Header
 $header-color: darken($alternate-color, 3*$darken-amount);
