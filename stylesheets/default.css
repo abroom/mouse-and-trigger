@@ -13,6 +13,13 @@ body {
   text-align: center;
   color: #333; }
 
+b, a {
+  color: #f777b8;
+  text-decoration: none; }
+
+a:not(.button):hover {
+  text-decoration: underline; }
+
 .button {
   display: inline-block;
   width: 200px;

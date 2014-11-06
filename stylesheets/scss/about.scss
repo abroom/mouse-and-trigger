@@ -2,16 +2,6 @@
 @import "utilities/variables";
 
 // General styling
-b {
-    color: $highlight-color;
-}
-a {
-    color: $highlight-color;
-    text-decoration: none;
-}
-a:not(.button):hover {
-    text-decoration: underline; 
-}
 h1 {
     margin: 0 $padding-normal;
 }

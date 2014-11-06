@@ -22,6 +22,14 @@ body {
 	color: $primary-color;
 }
 
+b, a {
+    color: darken($highlight-color, $darken-amount);
+    text-decoration: none;
+}
+a:not(.button):hover {
+    text-decoration: underline; 
+}
+
 .button {
 	display: inline-block;
 	width: 10*$padding-normal;
