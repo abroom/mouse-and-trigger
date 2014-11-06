@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAGA,CAAE;EACD,KAAK,ECMY,OAAO;;ADHzB,iBAAkB;EACjB,MAAM,EAAE,SAAmC;;AAG5C,SAAU;EACT,OAAO,EAAE,MAAmB;;AAG7B,oBAAqB;EACpB,WAAW,ECZK,IAAI;;ADerB,cAAe;EACd,MAAM,EAAE,MAAiB;EACzB,KAAK,ECXY,OAAO;;ADczB,SAAU;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,kBAAkB;;AAE3B,aAAc;EACb,KAAK,ECAU,KAAK;EDCpB,MAAM,ECDS,KAAK;EDEpB,aAAa,EC3BG,IAAI;;AD8BrB,MAAO;EACN,MAAM,EC/BU,IAAI;;ADiCrB,QAAS;EACR,MAAM,EClCU,IAAI;;ADoCrB,UAAW;EACV,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,MAAiB;;AAG1B,MAAO;EACN,UAAU,EAAE,IAAiB",
-"sources": ["scss/contributer.scss","scss/utilities/_variables.scss"],
+"sources": ["scss/contributor.scss","scss/utilities/_variables.scss"],
 "names": [],
-"file": "contributer.css"
+"file": "contributor.css"
 }
