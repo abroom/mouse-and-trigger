@@ -22,27 +22,21 @@
 
 .title {
   margin: 0 20px;
-  font-size: 40px; }
+  font-size: 2em; }
 
 .title a {
   text-decoration: none;
   color: #333; }
 
 .title a:hover {
-  color: #faa7d1; }
+  color: #faa7d1;
+  text-decoration: none; }
 
 .sub {
   margin: 0 40px;
   margin-bottom: 5px;
   font-weight: normal;
   font-style: italic; }
-
-.sub a {
-  text-decoration: none;
-  color: #faa7d1; }
-
-.sub a:hover {
-  text-decoration: underline; }
 
 .banner {
   display: block;
@@ -57,19 +51,10 @@
   clear: left; }
 
 .blurb a {
-  font-weight: bold;
-  color: #faa7d1;
-  text-decoration: none; }
-
-.blurb a:hover {
-  text-decoration: underline; }
+  font-weight: bold; }
 
 .continue-reading {
   margin: 0 40px;
-  text-decoration: none;
-  color: #faa7d1; }
-
-.continue-reading:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 /*# sourceMappingURL=load-articles.css.map */
