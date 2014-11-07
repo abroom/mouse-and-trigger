@@ -1,11 +1,12 @@
 // Import variables
 @import "utilities/variables";
 
+#article img {
+    width: 100%;
+}
+
 #article {
     text-align: left;
-}
-#article > *:not(#article-banner) {
-    padding: 0 2*$padding-normal;
 }
 
 #article-banner {
@@ -26,6 +27,7 @@
 
 #article-author-portrait {
     float: right;
+    margin-right: 2*$padding-normal;
 }
 #article-author-portrait img {
     width: $portrait-size-thumb;
@@ -46,7 +48,7 @@
     font-style: italic;
 }
 
-#article-body {
+#article-body > *:not(img) {
     margin: 0 3*$padding-normal;
     clear: left;
 }
@@ -56,12 +58,14 @@
     font-style: italic;
 }
 
-#article p {
-    margin-top: 0.25*$padding-normal;
+#article-body p {
+    margin-top: $padding-normal;
+}
+#article-body img {
+    margin-top: $padding-normal;
 }
 
 a {
-    color: $highlight-color;
     text-decoration: none;
 }
 
