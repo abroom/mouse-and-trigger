@@ -1,0 +1,44 @@
+// Import Variables
+@import "utilities/variables";
+
+b {
+	color: $highlight-color;
+}
+
+.button-container {
+	margin: $padding-normal/2 2*$padding-normal;
+}
+
+#wrap > * {
+	padding: 0 2*$padding-normal;
+}
+
+#name-title-portrait {
+	padding-top: $padding-normal;
+}
+
+#name-title h2 {
+	margin: 0 $padding-normal;
+	color: $highlight-color;
+}
+
+#portrait {
+	float: right;
+	margin: 20px 2px 17px 40px;
+}
+#portrait img {
+	width: $portrait-size;
+	height: $portrait-size;
+	border-radius: $padding-normal;
+}
+
+#about {
+	margin: $padding-normal;
+}
+#about p {
+	margin: $padding-normal;
+}
+
+#links {
+	margin-top: $padding-normal;
+}

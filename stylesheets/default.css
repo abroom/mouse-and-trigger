@@ -1,10 +1,247 @@
-/***
-	Author: Alexander Broom
-	Date: September 14, 2014
-
-	CSS Style Sheet for Mouse and Trigger Reviews
-***/
+* {
+  margin: 0;
+  padding: 0;
+  text-align: left; }
 
 html {
-	color: blue;
-}
+  background-color: #8e8e8e; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font: 1em Helvetica, sans-serif;
+  text-align: center;
+  color: #333; }
+
+b, a {
+  color: #f777b8;
+  text-decoration: none; }
+
+a:not(.button):hover {
+  text-decoration: underline; }
+
+.button {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  background: -webkit-linear-gradient(#fdd7ea, #fbbfde);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fdd7ea, #fbbfde);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fdd7ea, #fbbfde);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fdd7ea, #fbbfde);
+  /* Standard syntax */ }
+
+.button:hover {
+  background: -webkit-linear-gradient(#fbbfde, #faa7d1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fbbfde, #faa7d1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fbbfde, #faa7d1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fbbfde, #faa7d1);
+  /* Standard syntax */ }
+
+.button:active {
+  background: #faa7d1;
+  box-shadow: 0 0 10px 2px #f98fc4 inset; }
+
+hr {
+  margin: 40px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -moz-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -ms-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1);
+  background-image: -o-linear-gradient(left, #faa7d1, #fdd7ea, #faa7d1); }
+
+.float-container:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+header {
+  background-color: #424242;
+  position: relative; }
+
+#logo-title {
+  padding: 20px; }
+
+#logo-title:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#logo {
+  float: left;
+  width: 200px;
+  height: 200px; }
+
+#title {
+  float: left;
+  margin-left: 10px; }
+
+#navbar {
+  list-style-type: none;
+  background: -webkit-linear-gradient(#fbbfde, #faa7d1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fbbfde, #faa7d1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fbbfde, #faa7d1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fbbfde, #faa7d1);
+  /* Standard syntax */
+  border-radius: 20px 20px 0 0; }
+
+#navbar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#navbar > li {
+  float: left; }
+
+#navbar > li:first-child {
+  border-top-left-radius: 20px; }
+
+#navbar > li:last-child {
+  border-top-right-radius: 20px; }
+
+#navbar a {
+  display: block;
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1em; }
+
+#navbar > li:hover {
+  background: -webkit-linear-gradient(#faa7d1, #f98fc4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#faa7d1, #f98fc4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#faa7d1, #f98fc4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#faa7d1, #f98fc4);
+  /* Standard syntax */ }
+
+#navbar > li > a:active {
+  background: none;
+  background-color: #f98fc4;
+  box-shadow: 0 0 3px 2px #f777b8 inset; }
+
+#navbar > li:first-child > a:active {
+  border-top-left-radius: 20px; }
+
+#navbar > li:last-child > a:active {
+  border-top-right-radius: 20px; }
+
+.menu {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.active {
+  background: #f98fc4;
+  box-shadow: 0 0 3px 2px #f777b8 inset; }
+
+.active:hover {
+  background: #f98fc4 !important; }
+
+.drop-down {
+  display: none;
+  box-shadow: 1px 1px 2px #424242; }
+
+#navbar li:hover > .drop-down, .active > .drop-down {
+  display: block; }
+
+.drop-down {
+  position: absolute;
+  float: none;
+  list-style-type: none;
+  background-color: #fdd7ea;
+  border-bottom-right-radius: 20px; }
+
+.drop-down li:last-child a {
+  border-bottom-right-radius: 20px; }
+
+.drop-down a {
+  color: #333 !important;
+  padding: 10px 20px !important; }
+
+.drop-down a:hover {
+  background-color: #f777b8; }
+
+#wrap {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 3px 10px 4px #424242; }
+
+#page-title {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 4em;
+  color: #faa7d1;
+  border-bottom: 2px solid #faa7d1; }
+
+#navButtons {
+  text-align: center;
+  margin: 0 60px;
+  margin-top: 60px;
+  margin-bottom: 20px; }
+
+#navButtons:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#navButtons a:first-child {
+  float: left; }
+
+#navButtons a:last-child {
+  float: right; }
+
+#navButtons ul {
+  display: inline-block; }
+
+#navButtons li {
+  list-style-type: none;
+  display: inline;
+  margin: 20px; }
+
+footer {
+  margin: 0;
+  padding: 20px; }
+
+footer * {
+  margin: 0 20px;
+  text-align: right;
+  color: #eee; }
+
+.content-container {
+  margin: 0 auto;
+  max-width: 1000px; }
+
+/*# sourceMappingURL=default.css.map */

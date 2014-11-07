@@ -1,0 +1,41 @@
+// Variables for scss
+
+// Commonly Used Variables
+$darken-amount: 10%;
+$padding-normal: 20px;
+
+// Font Styling
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$alternate-color: #8e8e8e;
+$highlight-color: #faa7d1; //#f660ab;//#bd6c96;
+
+// Page Styling
+$html-color: $alternate-color;
+$wrap-color: #eee;
+$wrap-background-color: white;
+
+$content-width: 1000px;
+
+// Logo
+$logo-size: 200px;
+
+// Article border
+$article-border: 2px;
+
+// Img Border Size
+$img-border-size: 5px;
+
+// Portrait
+$portrait-size: 300px;
+$portrait-size-thumb: 150px;
+
+// Navbar
+$navbar-font-size: 1em;
+
+// Header
+$header-color: darken($alternate-color, 3*$darken-amount);
+
+// Footer
+$footer-color: $header-color;
+$footer-height: 50px;

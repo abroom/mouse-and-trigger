@@ -1,0 +1,268 @@
+// Import variables
+@import "utilities/variables";
+
+// Remove margin and padding from everything
+* {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+// html and body
+html {
+	background-color: $html-color;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+
+	font: 1em $font-stack;
+	text-align: center;
+	color: $primary-color;
+}
+
+b, a {
+    color: darken($highlight-color, $darken-amount);
+    text-decoration: none;
+}
+a:not(.button):hover {
+    text-decoration: underline; 
+}
+
+.button {
+	display: inline-block;
+	width: 10*$padding-normal;
+
+	text-align: center;
+	text-decoration: none;
+	color: $primary-color;
+
+	border-radius: 0.5*$padding-normal;
+	padding: 0.5*$padding-normal;
+	margin: 0.5*$padding-normal 0.5*$padding-normal 0 0;
+
+	background: -webkit-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, $darken-amount), lighten($highlight-color, 0.5*$darken-amount)); /* Standard syntax */
+}
+.button:hover {
+	background: -webkit-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* Standard syntax */
+}
+.button:active {
+	background: $highlight-color;
+	box-shadow: 0 0 10px 2px darken($highlight-color, 0.5*$darken-amount) inset;
+}
+
+hr {
+	margin: 2*$padding-normal;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:    -moz-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:     -ms-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+    background-image:      -o-linear-gradient(left, $highlight-color, lighten($highlight-color, $darken-amount), $highlight-color); 
+}
+
+.float-container:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+// header
+header {
+	background-color: $header-color;
+	position: relative;
+}
+
+// Logo and title formatting
+#logo-title {
+	padding: $padding-normal;
+}
+#logo-title:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#logo {
+	float: left;
+	width: $logo-size;
+	height: $logo-size;
+}
+#title {
+	float: left;
+	margin-left: $padding-normal/2;
+}
+
+// Navbar
+#navbar {
+	list-style-type: none;
+
+	background: -webkit-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lighten($highlight-color, 0.5*$darken-amount), $highlight-color); /* Standard syntax */
+
+	border-radius: $padding-normal $padding-normal 0 0;
+}
+#navbar:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#navbar > li {
+	float: left;
+}
+#navbar > li:first-child {
+	border-top-left-radius: $padding-normal;
+}
+#navbar > li:last-child {
+	border-top-right-radius: $padding-normal;
+}
+#navbar a {
+	display: block;
+	padding: $padding-normal;
+	color: $primary-color;
+	text-decoration: none;
+	font-size: $navbar-font-size;
+}
+#navbar > li:hover {
+	background: -webkit-linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($highlight-color, darken($highlight-color, 0.5*$darken-amount)); /* Standard syntax */
+
+}
+#navbar > li > a:active {
+	background: none;
+	background-color: darken($highlight-color, 0.5*$darken-amount);
+	box-shadow: 0 0 3px 2px darken($highlight-color, $darken-amount) inset;
+}
+#navbar > li:first-child > a:active {
+	border-top-left-radius: $padding-normal;
+}
+#navbar > li:last-child > a:active {
+	border-top-right-radius: $padding-normal;
+}
+
+// drop down menu styling
+.menu {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.active {
+	background: darken($highlight-color, 0.5*$darken-amount);
+	box-shadow: 0 0 3px 2px darken($highlight-color, $darken-amount) inset;
+}
+.active:hover {
+	background: darken($highlight-color, 0.5*$darken-amount) !important;
+}
+
+.drop-down {
+	display: none;
+	box-shadow: 1px 1px 2px $header-color;
+}
+#navbar li:hover > .drop-down, .active > .drop-down {
+	display: block;
+}
+.drop-down {
+	position: absolute;
+	float: none;
+	list-style-type: none;
+
+	background-color: lighten($highlight-color, $darken-amount);
+	border-bottom-right-radius: $padding-normal;
+}
+.drop-down li:last-child a {
+	border-bottom-right-radius: $padding-normal;
+}
+.drop-down a {
+	color: $primary-color !important;
+	padding: 0.5*$padding-normal $padding-normal !important;
+}
+.drop-down a:hover {
+	background-color: darken($highlight-color, $darken-amount);
+}
+
+// wrap
+#wrap {
+	margin: 0 auto;
+	padding-bottom: 2*$padding-normal;
+	background-color: $wrap-background-color;
+	box-shadow: 0 3px 10px 4px $header-color;
+}
+
+// page-title
+#page-title {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 4em;
+	color: $highlight-color;
+	border-bottom: $article-border solid $highlight-color;
+}
+
+// navButtons
+#navButtons {
+	text-align: center;
+	margin: 0 3*$padding-normal;
+	margin-top: 3*$padding-normal;
+	margin-bottom: $padding-normal;
+}
+#navButtons:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#navButtons a:first-child {
+	float: left;
+}
+#navButtons a:last-child {
+	float: right;
+}
+#navButtons ul {
+	display: inline-block;
+}
+#navButtons li {
+	list-style-type: none;
+	display: inline;
+	margin: $padding-normal;
+}
+
+// footer
+footer {
+	margin: 0;
+	padding: $padding-normal;
+}
+footer * {
+	margin: 0 $padding-normal;
+	text-align: right;
+	color: $wrap-color;
+}
+
+// content-container limits width of content if the viewport is too large
+.content-container {
+	margin: 0 auto;
+	max-width: $content-width;
+}

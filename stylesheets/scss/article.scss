@@ -1,0 +1,82 @@
+// Import variables
+@import "utilities/variables";
+
+#article img {
+    width: 100%;
+}
+
+#article {
+    text-align: left;
+}
+
+#article-banner {
+    margin-bottom: $padding-normal;
+    width: 100%;
+}
+
+#article hr {
+    margin: 0;
+}
+
+#article-title-sub {
+    float: left;
+    border-bottom: $article-border solid $highlight-color;
+    padding: 0 $padding-normal;
+    margin-bottom: $padding-normal;
+}
+
+#article-author-portrait {
+    float: right;
+    margin-right: 2*$padding-normal;
+}
+#article-author-portrait img {
+    width: $portrait-size-thumb;
+    height: $portrait-size-thumb;
+    border-radius: $portrait-size-thumb/2;
+
+    box-shadow: 0 0 2*$img-border-size $highlight-color;
+}
+
+#article-title {
+    margin: 0 $padding-normal;
+}
+
+#article-sub {
+    margin-left: 2*$padding-normal;
+    margin-bottom: 0.5*$padding-normal;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#article-body > *:not(img) {
+    margin: 0 3*$padding-normal;
+    clear: left;
+}
+
+#article-blurb {
+    margin-top: 0.75*$padding-normal !important;
+    font-style: italic;
+}
+
+#article-body p {
+    margin-top: $padding-normal;
+}
+#article-body img {
+    margin-top: $padding-normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.article-image {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}

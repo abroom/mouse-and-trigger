@@ -1,0 +1,35 @@
+b {
+  color: #faa7d1; }
+
+.button-container {
+  margin: 10px 40px; }
+
+#wrap > * {
+  padding: 0 40px; }
+
+#name-title-portrait {
+  padding-top: 20px; }
+
+#name-title h2 {
+  margin: 0 20px;
+  color: #faa7d1; }
+
+#portrait {
+  float: right;
+  margin: 20px 2px 17px 40px; }
+
+#portrait img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px; }
+
+#about {
+  margin: 20px; }
+
+#about p {
+  margin: 20px; }
+
+#links {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=contributor.css.map */

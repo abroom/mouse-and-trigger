@@ -1,0 +1,38 @@
+// Import variables
+@import "utilities/variables";
+
+// General styling
+h1 {
+    margin: 0 $padding-normal;
+}
+h2 {
+    margin: 0 2*$padding-normal;
+}
+p {
+    margin: $padding-normal/2 4*$padding-normal;
+    margin-top: 0;
+}
+div {
+    margin-bottom: $padding-normal;
+}
+
+// Specific
+.button-container {
+    margin: 0 4*$padding-normal;
+}
+#wrap {
+    padding: $padding-normal 0;
+}
+
+#about h1 {
+    margin: 0 2*$padding-normal;
+    font-size: 2.5em;
+}
+
+#contributors ul {
+    margin: 0 4*$padding-normal;
+    list-style: none;
+}
+#contributors a {
+    font-size: $navbar-font-size;
+}
